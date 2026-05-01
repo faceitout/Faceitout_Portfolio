@@ -1,0 +1,86 @@
+{
+  "logo": {
+    "text": "faceitout",
+    "href": "./home.html"
+  },
+  "menu": [
+    {
+      "label": "Work",
+      "href": "./work.html",
+      "current": true
+    },
+    {
+      "label": "Gallery",
+      "href": "./gallery.html"
+    },
+    {
+      "label": "About",
+      "href": "./about.html"
+    }
+  ],
+  "projects": [
+    {
+      "title": "Nexo",
+      "year": "2026",
+      "tags": "IDENTIDAD DE MARCA, MOTION",
+      "image": "./assets/images/Nexo_08.png",
+      "alt": "Teatros del Canal",
+      "href": "./project05.html"
+    },
+    {
+      "title": "TEATROS DEL CANAL",
+      "year": "2025",
+      "tags": "IDENTIDAD DE MARCA, MOTION",
+      "type": "image",
+      "image": "./assets/images/Teatros_02.png",
+      "alt": "Teatros del Canal",
+      "href": "./project02.html"
+    },
+    {
+      "title": "Fanzine P02054AZ - Sen Senra",
+      "year": "2025",
+      "tags": "Editorial, arte final, experimental",
+      "image": "./assets/images/Sen_04.png",
+      "alt": "Po...",
+      "href": "./project03.html"
+    },
+    {
+      "title": "FUNDACIÓN CHIMPATÍA",
+      "year": "2025",
+      "tags": "IDENTIDAD DE MARCA, MOTION",
+      "image": "./assets/images/Chim_09.png",
+      "alt": "Fundación Chimpatía",
+      "href": "./project04.html"
+    },
+    {
+      "title": "No Labels - Art and Design Festival",
+      "year": "2025",
+      "tags": "IDENTIDAD DE MARCA, MOTION",
+      "image": "./assets/images/Labels_02.PNG",
+      "alt": "No Labels",
+      "href": "./project01.html"
+    }
+  ],
+  "footer": {
+    "copyright": "© 2026 faceitout",
+    "social": [
+      {
+        "label": "Instagram",
+        "href": "https://www.instagram.com/face.itout?igsh=a2trcHo4Mjk2dmI%3D&utm_source=qr"
+      },
+      {
+        "label": "Tik Tok",
+        "href": "https://www.tiktok.com/@face.itout?_r=1&_t=ZN-95yeSowWLUV"
+      },
+      {
+        "label": "Behance",
+        "href": "#"
+      }
+    ],
+    "contact": {
+      "email": "almudenaestevez23@gmail.com",
+      "phoneLabel": "(+34) 638455663",
+      "phoneHref": "tel:+34638455663"
+    }
+  }
+}

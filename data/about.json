@@ -1,0 +1,94 @@
+{
+  "logo": {
+    "text": "faceitout",
+    "href": "./home.html"
+  },
+  "menu": [
+    {
+      "label": "Work",
+      "href": "./work.html"
+    },
+    {
+      "label": "Gallery",
+      "href": "./gallery.html"
+    },
+    {
+      "label": "About",
+      "href": "./about.html",
+      "current": true
+    }
+  ],
+  "about": {
+    "description": "Soy Almudena Estívez, diseñadora gráfica centrada en branding, diseño digital, sistemas de diseño, UI/UX, dirección de arte, editorial y motion. Me gusta abordar proyectos diferentes partiendo siempre de una base visual sólida, pero buscando una perspectiva propia que permita construir soluciones claras, contemporáneas y flexibles. Desarrollo identidades visuales y sistemas creativos capaces de adaptarse con coherencia a distintos formatos y soportes, combinando diferentes herramientas y procesos de trabajo según las necesidades de cada proyecto.",
+    "meta": [
+      {
+        "label": "Social",
+        "links": [
+          {
+            "label": "Instagram",
+            "href": "https://www.instagram.com/face.itout?igsh=a2trcHo4Mjk2dmI%3D&utm_source=qr"
+          },
+          {
+            "label": "Tik Tok",
+            "href": "https://www.tiktok.com/@face.itout?_r=1&_t=ZN-95yeSowWLUV"
+          },
+          {
+            "label": "Behance",
+            "href": "#"
+          }
+        ]
+      },
+      {
+        "label": "CV",
+        "linkLabel": "Descargar CV",
+        "linkHref": "./assets/images/CV_Almudena_Estévez_.pdf"
+      },
+      {
+        "label": "Servicios",
+        "lines": [
+          "Branding",
+          "UI/UX Design",
+          "Design Systems",
+          "Art Direction",
+          "Editorial",
+          "Visual Design"
+        ]
+      },
+      {
+        "label": "Contacto",
+        "lines": [
+          "almudenaestevez23@gmail.com",
+          "(+34)638455663"
+        ]
+      }
+    ],
+    "image": {
+      "src": "./assets/images/Yo.jpg",
+      "alt": "Imagen About",
+      "position": "50% 50%",
+      "fit": "cover"
+    }
+  },
+  "footer": {
+    "copyright": "© 2026 faceitout",
+    "social": [
+      {
+        "label": "Instagram",
+        "href": "https://www.instagram.com/face.itout?igsh=a2trcHo4Mjk2dmI%3D&utm_source=qr"
+      },
+      {
+        "label": "Tik Tok",
+        "href": "https://www.tiktok.com/@face.itout?_r=1&_t=ZN-95yeSowWLUV"
+      },
+      {
+        "label": "Behance",
+        "href": "#"
+      }
+    ],
+    "contact": {
+      "email": "almudenaestevez23@gmail.com",
+      "phoneLabel": "(+34) 638455663",
+      "phoneHref": "tel:+34638455663"
+    }
+  }
+}

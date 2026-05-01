@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Project 01 | Portfolio</title>
+  <link rel="stylesheet" href="./assets/css/main.css" />
+</head>
+
+<body data-project="project01">
+  <div id="smooth-wrapper">
+    <div id="smooth-content">
+      <div class="site-wrapper">
+        <header class="site-header">
+          <div class="site-header__inner">
+            <a href="./home.html" class="site-header__logo" id="siteLogo"></a>
+
+            <nav class="site-header__nav" aria-label="Navegación principal">
+              <ul class="site-header__menu" id="siteMenu"></ul>
+            </nav>
+
+            <div class="site-header__time">
+              <span id="clock">11:25:54 a.m.</span>
+            </div>
+          </div>
+        </header>
+
+        <main class="project-page">
+          <section class="project-detail" id="projectDetail"></section>
+        </main>
+
+        <footer class="site-footer">
+          <div class="site-footer__inner">
+            <div class="site-footer__col site-footer__col--copyright" id="footerCopyright"></div>
+            <div class="site-footer__col site-footer__col--social" id="footerSocial"></div>
+            <div class="site-footer__col site-footer__col--contact" id="footerContact"></div>
+          </div>
+        </footer>
+      </div>
+    </div>
+  </div>
+
+  <div class="custom-cursor" id="customCursor">
+    <span class="custom-cursor__label">View</span>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.3/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.3/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/Draggable.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/ScrollSmoother.min.js"></script>
+  <script src="./web/main.js" defer></script>
+  <script src="./web/projects.js" defer></script>
+</body>
+</html>

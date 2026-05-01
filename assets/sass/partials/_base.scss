@@ -1,0 +1,142 @@
+@use "./variables" as *;
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: auto;
+  background: $color-dark-bg;
+}
+
+html.lenis,
+html.lenis body {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+body {
+  margin: 0;
+  font-family: $font-primary;
+  color: $color-header-text;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  color: $link-text-color;
+  text-decoration: $link-text-decoration;
+  transition: color 0.2s ease, opacity 0.2s ease, text-decoration 0.2s ease;
+
+  &:hover {
+    color: $link-hover-text-color;
+    text-decoration: $link-hover-text-decoration;
+  }
+
+  &[aria-current="page"],
+  &.is-current {
+    color: $link-current-text-color;
+    text-decoration: $link-current-text-decoration;
+  }
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+html,
+body,
+body * {
+  cursor: none !important;
+}
+
+.custom-cursor {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.125rem;
+  height: 1.125rem;
+  overflow: hidden;
+  border-radius: 0;
+  background: $color-accent;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  will-change: transform, width, height, background-color;
+
+  &__label {
+    opacity: 0;
+    font-family: $font-primary;
+    font-size: 0.8125rem;
+    font-weight: 600;
+    line-height: 1;
+    color: $color-cursor-label;
+    white-space: nowrap;
+    transition: opacity 0.2s ease;
+  }
+
+  &.is-hover {
+    width: 1.125rem;
+    height: 1.125rem;
+    border-radius: 50%;
+    box-shadow: 0 0 1.75rem $color-cursor-glow-strong;
+  }
+
+  &.is-view {
+    width: 3.125rem;
+    height: 1.875rem;
+    border-radius: 0;
+    background: $color-accent;
+    box-shadow: 0 0 1.125rem $color-cursor-glow-soft;
+
+    .custom-cursor__label {
+      opacity: 1;
+    }
+  }
+}
+
+@media (hover: none), (pointer: coarse) {
+  html,
+  body,
+  body * {
+    cursor: auto !important;
+  }
+
+  .custom-cursor {
+    display: none !important;
+  }
+}
+
+.page-transition-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 99999;
+  background: $color-dark-bg;
+  clip-path: inset(100% 0 0 0);
+  pointer-events: none;
+  will-change: clip-path;
+}
+
+body.is-transitioning {
+  overflow: hidden;
+}
+
+body.is-transitioning .site-wrapper {
+  pointer-events: none;
+  will-change: transform;
+}

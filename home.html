@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home | Portfolio</title>
+  <link rel="stylesheet" href="./assets/css/main.css" />
+</head>
+
+<body class="home-page">
+  <div id="smooth-wrapper">
+    <div id="smooth-content">
+      <div class="site-wrapper">
+        <header class="site-header">
+          <div class="site-header__inner">
+            <a href="./home.html" class="site-header__logo" id="siteLogo"></a>
+
+            <nav class="site-header__nav" aria-label="Navegación principal">
+              <ul class="site-header__menu" id="siteMenu"></ul>
+            </nav>
+
+            <div class="site-header__time">
+              <span id="clock">11:25:54 a.m.</span>
+            </div>
+          </div>
+        </header>
+
+        <main class="home">
+          <section class="gallery-3d" id="work">
+            <div class="gallery-3d__stage">
+              <div class="gallery-3d__container">
+                <div class="gallery-3d__ring" id="gallery3D"></div>
+              </div>
+            </div>
+          </section>
+
+          <section id="gallery" class="page-anchor"></section>
+          <section id="about" class="page-anchor"></section>
+        </main>
+
+        <footer class="site-footer">
+          <div class="site-footer__inner">
+            <div class="site-footer__col site-footer__col--copyright" id="footerCopyright"></div>
+            <div class="site-footer__col site-footer__col--social" id="footerSocial"></div>
+            <div class="site-footer__col site-footer__col--contact" id="footerContact"></div>
+          </div>
+        </footer>
+      </div>
+    </div>
+  </div>
+
+  <div class="custom-cursor" id="customCursor">
+    <span class="custom-cursor__label">View</span>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.3/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.3/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/Draggable.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/ScrollSmoother.min.js"></script>
+  <script src="./web/main.js" defer></script>
+  <script src="./web/home.js" defer></script>
+</body>
+</html>

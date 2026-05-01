@@ -1,0 +1,134 @@
+@use "./variables" as *;
+
+body.home-page {
+  height: 100vh;
+  overflow: hidden;
+
+  .site-wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    overflow: hidden;
+  }
+
+  .home {
+    flex: 1;
+    min-height: 0;
+    overflow: hidden;
+  }
+}
+
+.home {
+  flex: 1;
+}
+
+.gallery-3d {
+  position: relative;
+  width: 100%;
+  height: 80vh;
+}
+
+.gallery-3d__container {
+  position: fixed;
+  top: $header-height;
+  left: 0;
+  width: 100%;
+  height: calc(100vh - #{$header-height});
+  overflow: hidden;
+  perspective: 31.25rem;
+  pointer-events: none;
+}
+
+.gallery-3d__ring {
+  position: absolute;
+  top: 42%;
+  left: 50%;
+  transform: translateX(-50%) rotateX(0deg);
+  transform-style: preserve-3d;
+  pointer-events: auto;
+  will-change: transform;
+}
+
+.gallery-3d__item {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 10rem;
+  height: 6.25rem;
+  margin: 0.625rem;
+  overflow: hidden;
+  background: $color-carousel-placeholder;
+  cursor: default;
+  transform: translate(-50%, -50%);
+  transform-style: preserve-3d;
+  will-change: transform;
+
+  --carousel-media-fit: cover;
+  --carousel-media-position: 50% 50%;
+}
+
+.gallery-3d__item img,
+.gallery-3d__item video {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: var(--carousel-media-fit);
+  object-position: var(--carousel-media-position);
+  pointer-events: none;
+}
+
+.page-anchor {
+  width: 100%;
+  height: 0.0625rem;
+}
+
+.site-header {
+  overflow: hidden;
+  will-change: transform, opacity;
+}
+
+.site-header__logo,
+.site-header__menu li,
+.site-header__time {
+  will-change: transform, opacity;
+}
+
+@media (max-width: $bp-tablet) {
+  .gallery-3d {
+    height: 70vh;
+  }
+
+  .gallery-3d__container {
+    top: -0.8125rem;
+    height: calc(70vh - 2.1875rem);
+  }
+
+  .gallery-3d__ring {
+    top: 59%;
+    transform: translate(-50%, -50%) rotateX(0deg);
+  }
+
+  .gallery-3d__item {
+      width: 16.125rem;
+      height: 17.0625rem;
+      margin: .375rem;
+  }
+
+  body.home-page {
+    height: 100dvh;
+    overflow: hidden;
+
+    .site-wrapper {
+      display: flex;
+      flex-direction: column;
+      height: 100dvh;
+      overflow: hidden;
+    }
+
+    .home {
+      flex: 1;
+      min-height: 0;
+      overflow: hidden;
+    }
+  }
+}

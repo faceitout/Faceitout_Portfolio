@@ -1,0 +1,122 @@
+{
+  "logo": {
+    "text": "faceitout",
+    "href": "./home.html"
+  },
+  "menu": [
+    {
+      "label": "Work",
+      "href": "./work.html"
+    },
+    {
+      "label": "Gallery",
+      "href": "./gallery.html",
+      "current": true
+    },
+    {
+      "label": "About",
+      "href": "./about.html"
+    }
+  ],
+    "gallery": [
+          {
+      "title": "Logo animado faceitout - Blender",
+      "type": "video",
+      "video": "./assets/images/Folleto.mp4",
+      "alt": "Teatros del Canal imagen 02",
+      "layout": "tall"
+    },
+    {
+      "title": "Cartel para la opera carmen - comunidad de madrid",
+      "image": "./assets/images/Cartel_04.jpg",
+      "alt": "Teatros del Canal imagen 04",
+      "layout": "tall"
+    },
+    {
+      "title": "visuales para la Madrid fashion week 2025, Soundreactive - Touchdesigner",
+      "type": "video",
+      "video": "./assets/images/Insta_post2.mp4",
+      "alt": "Teatros del Canal imagen 02",
+      "layout": "tall"
+    },
+    {
+      "title": "Rusowsky poster",
+      "image": "./assets/images/Cartel_03.png",
+      "alt": "Teatros del Canal imagen 01",
+      "layout": "tall"
+    },
+    {
+      "title": "Videoclip experimental Motion",
+      "type": "video",
+      "video": "./assets/images/Motion01.mp4",
+      "alt": "Teatros del Canal imagen 02",
+      "layout": "large"
+    },
+    {
+      "title": "Gestalt poster",
+      "image": "./assets/images/Cartel_02.png",
+      "alt": "Teatros del Canal imagen 03",
+      "layout": "tall"
+    },
+    {
+      "title": "video lyrics experimental Motion",
+      "type": "video",
+      "video": "./assets/images/BBY ROMEO.mp4",
+      "alt": "Teatros del Canal imagen 02",
+      "layout": "medium"
+    },
+    {
+      "title": "El orden del tiempo - Carlo Rovelli",
+      "image": "./assets/images/Libro.png",
+      "alt": "Teatros del Canal imagen 05",
+      "layout": "medium"
+    },
+    {
+      "title": "Instante Fanzine Experimental",
+      "image": "./assets/images/Fanzine02.jpg",
+      "alt": "Teatros del Canal imagen 06",
+      "layout": "medium"
+    },
+    {
+      "title": "BBY ROMEO - Serigrafía",
+      "image": "./assets/images/Img_01.jpg",
+      "alt": "Teatros del Canal imagen 07",
+      "layout": "tall"
+    },
+    {
+      "title": "Rotoscopia- -Constelación, Duki",
+      "type": "video",
+      "video": "./assets/images/Motion02.mp4",
+      "alt": "Teatros del Canal imagen 02",
+      "layout": "medium"
+    },
+    {
+      "title": "Cartel para las jornadas de ilustracion 2025 ESDMadrid",
+      "image": "./assets/images/Cartel_01.jpg",
+      "alt": "Teatros del Canal imagen 09",
+      "layout": "tall" 
+    }
+  ],
+  "footer": {
+    "copyright": "© 2026 faceitout",
+    "social": [
+      {
+        "label": "Instagram",
+        "href": "https://www.instagram.com/face.itout?igsh=a2trcHo4Mjk2dmI%3D&utm_source=qr"
+      },
+      {
+        "label": "Tik Tok",
+        "href": "https://www.tiktok.com/@face.itout?_r=1&_t=ZN-95yeSowWLUV"
+      },
+      {
+        "label": "Behance",
+        "href": "#"
+      }
+    ],
+    "contact": {
+      "email": "almudenaestevez23@gmail.com",
+      "phoneLabel": "(+34) 638455663",
+      "phoneHref": "tel:+34638455663"
+    }
+  }
+}

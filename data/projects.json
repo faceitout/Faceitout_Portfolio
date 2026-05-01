@@ -1,0 +1,300 @@
+{
+  "logo": {
+    "text": "faceitout",
+    "href": "./home.html"
+  },
+  "menu": [
+    {
+      "label": "Work",
+      "href": "./work.html",
+      "current": true
+    },
+    {
+      "label": "Gallery",
+      "href": "./gallery.html"
+    },
+    {
+      "label": "About",
+      "href": "./about.html"
+    }
+  ],
+  "projects": [
+    {
+      "id": "project05",
+      "title": "Nexo / Rediseño Rakuten TV",
+      "description": "Rediseño estratégico, visual y audiovisual de Rakuten TV bajo una nueva identidad: Nexo. El proyecto replantea la marca como una plataforma más clara, flexible y conectada con el usuario, reforzando la diferencia entre contenido gratuito, alquiler, compra y canales. La propuesta incluye sistema visual, lenguaje motion, piezas on air, pantallas de experiencia y recursos audiovisuales para construir una identidad más reconocible y coherente.",
+      "client": "Nexo / Rakuten TV",
+      "disciplines": [
+        "UX/UI",
+        "Flexible brand identity",
+        "Motion",
+        "On Air Design"
+      ],
+      "year": "2026",
+      "linkLabel": "ver proyecto entero",
+      "linkHref": "#",
+      "gallery": [
+        {
+          "image": "./assets/images/Nexo_07.png",
+          "alt": "Proyecto 05 imagen 01"
+        },
+        {
+          "image": "./assets/images/Nexo_03.png",
+          "alt": "Proyecto 05 imagen 02"
+        },
+        {
+          "image": "./assets/images/Nexo_04.png",
+          "alt": "Proyecto 05 imagen 03"
+        },
+        {
+          "image": "./assets/images/Nexo_06.png",
+          "alt": "Proyecto 05 imagen 04"
+        },
+        {
+          "image": "./assets/images/Nexo_02.png",
+          "alt": "Proyecto 05 imagen 05"
+        },
+        {
+          "type": "video",
+          "video": "./assets/images/Nexo_09.mp4",
+          "alt": "Nexo Video"
+        },
+        {
+          "image": "./assets/images/Nexo_05.png",
+          "alt": "Proyecto 05 imagen 07"
+        },
+        {
+          "image": "./assets/images/Nexo_01.png",
+          "alt": "Proyecto 05 imagen 08"
+        }
+      ]
+    },
+    {
+      "id": "project02",
+      "title": "TEATROS DEL CANAL",
+      "description": "Rediseño de la identidad de Teatros del Canal desde una mirada más contemporánea, clara y flexible. Un sistema visual pensado para reforzar su carácter cultural y adaptarse con coherencia a distintos formatos y soportes.",
+      "client": "Teatros del Canal",
+      "disciplines": [
+        "Branding",
+        "Digital Design",
+        "Motion",
+        "Flexible visual identity"
+      ],
+      "year": "2025",
+      "linkLabel": "ver proyecto entero",
+      "gallery": [
+        {
+          "type": "image",
+          "image": "./assets/images/Teatros_01.png",
+          "alt": "Teatros del Canal Img"
+        },
+        {
+          "type": "video",
+          "video": "./assets/images/Teatros_03.mp4",
+          "alt": "Teatros del Canal Video"
+        },
+        {
+          "type": "image",
+          "image": "./assets/images/Teatros_04.png",
+          "alt": "Teatros del Canal Img"
+        },
+        {
+          "type": "image",
+          "image": "./assets/images/Teatros_05.png",
+          "alt": "Teatros del Canal Img"
+        },
+        {
+          "image": "./assets/images/Teatros_02.png",
+          "alt": "Proyecto 02 imagen 05"
+        },
+        {
+          "image": "./assets/images/Teatros_06.png",
+          "alt": "Proyecto 02 imagen 06"
+        },
+        {
+          "image": "./assets/images/Teatros_07.png",
+          "alt": "Proyecto 02 imagen 07"
+        },
+        {
+          "image": "./assets/images/Teatros_08.png",
+          "alt": "Proyecto 02 imagen 08"
+        }
+      ]
+    },
+    {
+      "id": "project03",
+      "title": "Fanzine Sen Senra / PO2054AZ",
+      "description": "Diseño y realización de un fanzine experimental basado en la unión de los tres volúmenes de PO2054AZ de Sen Senra. El proyecto interpreta visualmente el recorrido del artista a través de sus álbumes, trabajando con canales, semitonos, capas, texturas e intervenciones gráficas hasta construir una pieza editorial con carácter de libro-objeto.",
+      "client": "Proyecto personal / Sen Senra",
+      "disciplines": [
+        "Editorial",
+        "Art Direction",
+        "Experimental Design",
+        "Arte final"
+      ],
+      "year": "2025",
+      "linkLabel": "ver proyecto entero",
+      "gallery": [
+        {
+          "type": "image",
+          "image": "./assets/images/Sen_07.png",
+          "alt": "Sen Senra Img"
+        },
+        {
+          "type": "image",
+          "image": "./assets/images/Sen_02.png",
+          "alt": "Sen Senra Img"
+        },
+        {
+          "type": "image",
+          "image": "./assets/images/Sen_03.png",
+          "alt": "Sen Senra Img"
+        },
+        {
+          "type": "image",
+          "image": "./assets/images/Sen_05.png",
+          "alt": "Sen Senra Img"
+        },
+        {
+          "image": "./assets/images/Sen_04.png",
+          "alt": "Sen Senra Img"
+        },
+        {
+          "image": "./assets/images/Sen_06.png",
+          "alt": "Sen Senra Img"
+        },
+        {
+          "image": "./assets/images/Sen_08.png",
+          "alt": "Sen Senra Img"
+        },
+        {
+          "image": "./assets/images/Sen_01.png",
+          "alt": "Sen Senra Img"
+        }
+      ]
+    },
+    {
+      "id": "project04",
+      "title": "Fundación Chimpátia",
+      "description": "Rediseño de la identidad visual de Fundación Chimpátia, un santuario dedicado al rescate y cuidado de primates. El proyecto construye una marca más clara, cercana y reconocible, capaz de comunicar su labor social desde una mirada sensible y contemporánea. La identidad se extiende a soportes impresos, campaña digital, redes sociales y piezas motion.",
+      "client": "Fundación Chimpátia",
+      "disciplines": [
+        "Branding",
+        "Campaign",
+        "Digital",
+        "Motion"
+      ],
+      "year": "2025",
+      "linkLabel": "ver proyecto entero",
+      "linkHref": "#",
+      "gallery": [
+        {
+          "image": "./assets/images/Chim_01.png",
+          "alt": "Proyecto 04 imagen 01"
+        },
+        {
+          "image": "./assets/images/Chim_02.png",
+          "alt": "Proyecto 04 imagen 02"
+        },
+        {
+          "image": "./assets/images/Chim_08.png",
+          "alt": "Proyecto 04 imagen 03"
+        },
+        {
+          "image": "./assets/images/Chim_04.png",
+          "alt": "Proyecto 04 imagen 04"
+        },
+        {
+          "image": "./assets/images/Chim_05.png",
+          "alt": "Proyecto 04 imagen 05"
+        },
+        {
+          "image": "./assets/images/Chim_03.png",
+          "alt": "Proyecto 04 imagen 06"
+        },
+        {
+          "image": "./assets/images/Chim_06.png",
+          "alt": "Proyecto 04 imagen 07"
+        },
+        {
+          "type": "video",
+          "video": "./assets/images/Chim_07.mp4",
+          "alt": "Teatros del Canal Video"
+        }
+      ]
+    },
+    {
+      "id": "project01",
+      "title": "No Labels: Art and Design Festival",
+      "description": "Desarrollo de la identidad visual de No Labels, un festival de arte y diseño enfocado en la creatividad emergente, la experimentación y la libre expresión. Un sistema visual urbano, flexible y enérgico, pensado para adaptarse a piezas impresas, digitales y audiovisuales.",
+      "client": "No Labels Festival",
+      "disciplines": [
+        "Branding",
+        "Digital",
+        "Flexible brand identity"
+      ],
+      "year": "2025",
+      "linkLabel": "link.al.proyecto",
+      "gallery": [
+        {
+          "type": "image",
+          "image": "./assets/images/Labels_07.png",
+          "alt": "No Labels Img"
+        },
+        {
+          "type": "image",
+          "image": "./assets/images/Labels_08.png",
+          "alt": "No Labels Img"
+        },
+        {
+          "type": "image",
+          "image": "./assets/images/Labels_03.PNG",
+          "alt": "No Labels Img"
+        },
+        {
+          "type": "image",
+          "image": "./assets/images/Labels_04.PNG",
+          "alt": "No Labels Img"
+        },
+        {
+          "image": "./assets/images/Labels_02.PNG",
+          "alt": "No Labels Img"
+        },
+        {
+          "image": "./assets/images/Labels_06.PNG",
+          "alt": "No Labels Img"
+        },
+        {
+          "image": "./assets/images/Labels_05.PNG",
+          "alt": "No Labels Img"
+        },
+        {
+          "image": "./assets/images/Labels_01.png",
+          "alt": "No Labels Img"
+        }
+      ]
+    }
+  ],
+  "footer": {
+    "copyright": "© 2026 faceitout",
+    "social": [
+      {
+        "label": "Instagram",
+        "href": "https://www.instagram.com/face.itout?igsh=a2trcHo4Mjk2dmI%3D&utm_source=qr"
+      },
+      {
+        "label": "Tik Tok",
+        "href": "https://www.tiktok.com/@face.itout?_r=1&_t=ZN-95yeSowWLUV"
+      },
+      {
+        "label": "Behance",
+        "href": "#"
+      }
+    ],
+    "contact": {
+      "email": "almudenaestevez23@gmail.com",
+      "phoneLabel": "(+34) 638455663",
+      "phoneHref": "tel:+34638455663"
+    }
+  }
+}

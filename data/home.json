@@ -1,0 +1,92 @@
+{
+  "logo": {
+    "text": "faceitout",
+    "href": "./home.html"
+  },
+  "menu": [
+    {
+      "label": "Work",
+      "href": "./work.html"
+    },
+    {
+      "label": "Gallery",
+      "href": "./gallery.html"
+    },
+    {
+      "label": "About",
+      "href": "./about.html"
+    }
+  ],
+  "carousel": [
+    {
+      "type": "video",
+      "video": "./assets/images/Motion01.mp4",
+      "alt": "Proyecto vídeo 01",
+      "position": "50% 94%",
+      "fit": "cover",
+      "href": "./gallery.html"
+    },
+    {
+      "type": "image",
+      "image": "./assets/images/Cartel_02.png",
+      "alt": "Proyecto 02",
+      "position": "50% 30%",
+      "fit": "cover",
+      "href": "./gallery.html"
+    },
+    {
+      "type": "video",
+      "video": "./assets/images/Nexo_09.mp4",
+      "alt": "Proyecto vídeo 02",
+      "position": "50% 45%",
+      "fit": "cover",
+      "href": "./project05.html"
+    },
+    {
+      "type": "image",
+      "image": "./assets/images/Sen_04.png",
+      "alt": "Proyecto 02",
+      "position": "50% 50%",
+      "fit": "cover",
+      "href": "./project03.html"
+    },
+    {
+      "type": "video",
+      "video": "./assets/images/Teatros_03.mp4",
+      "alt": "Proyecto vídeo 02",
+      "position": "50% 45%",
+      "fit": "cover",
+      "href": "./gallery.html"
+    },
+    {
+      "type": "image",
+      "image": "./assets/images/Cartel_03.png",
+      "alt": "Proyecto 02",
+      "position": "50% 92%",
+      "fit": "cover",
+      "href": "./gallery.html"
+    }
+  ],
+  "footer": {
+    "copyright": "© 2026 faceitout",
+    "social": [
+      {
+        "label": "Instagram",
+        "href": "https://www.instagram.com/face.itout?igsh=a2trcHo4Mjk2dmI%3D&utm_source=qr"
+      },
+      {
+        "label": "Tik Tok",
+        "href": "https://www.tiktok.com/@face.itout?_r=1&_t=ZN-95yeSowWLUV"
+      },
+      {
+        "label": "Behance",
+        "href": "#"
+      }
+    ],
+    "contact": {
+      "email": "almudenaestevez23@gmail.com",
+      "phoneLabel": "(+34) 638455663",
+      "phoneHref": "tel:+34638455663"
+    }
+  }
+}
