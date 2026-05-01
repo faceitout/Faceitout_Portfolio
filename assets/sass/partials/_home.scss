@@ -1,14 +1,15 @@
 @use "./variables" as *;
 
 body.home-page {
-  height: 100vh;
-  overflow: hidden;
+  min-height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
 
   .site-wrapper {
     display: flex;
     flex-direction: column;
-    height: 100vh;
-    overflow: hidden;
+    min-height: 100vh;
+    overflow: visible;
   }
 
   .home {
@@ -93,42 +94,58 @@ body.home-page {
   will-change: transform, opacity;
 }
 
+.gallery-3d__stage {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
 @media (max-width: $bp-tablet) {
   .gallery-3d {
-    height: 70vh;
+    display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 100%;
+  padding-block: 1.5rem;
   }
 
   .gallery-3d__container {
-    top: -0.8125rem;
-    height: calc(70vh - 2.1875rem);
+    position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
   }
 
   .gallery-3d__ring {
-    top: 59%;
-    transform: translate(-50%, -50%) rotateX(0deg);
+    top: 50%;
+  transform: translate(-50%, -50%) rotateX(0deg);
   }
 
   .gallery-3d__item {
       width: 16.125rem;
-      height: 17.0625rem;
+      height: 21.0625rem;
       margin: .375rem;
   }
 
   body.home-page {
-    height: 100dvh;
-    overflow: hidden;
+    min-height: 100dvh;
+    overflow-x: hidden;
+    overflow-y: auto;
 
     .site-wrapper {
       display: flex;
       flex-direction: column;
-      height: 100dvh;
-      overflow: hidden;
+      min-height: 100dvh;
+      overflow: visible;
     }
 
     .home {
       flex: 1;
       min-height: 0;
-      overflow: hidden;
+  align-items: center;
+  justify-content: center;
+    padding-block: 1.5rem;
     }
   }
 }

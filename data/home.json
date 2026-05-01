@@ -19,12 +19,12 @@
   ],
   "carousel": [
     {
-      "type": "video",
-      "video": "./assets/images/Motion01.mp4",
-      "alt": "Proyecto vídeo 01",
-      "position": "50% 94%",
+      "type": "image",
+      "image": "./assets/images/Chim_09.png",
+      "alt": "Proyecto 02",
+      "position": "50% 30%",
       "fit": "cover",
-      "href": "./gallery.html"
+      "href": "./project04.html"
     },
     {
       "type": "image",
@@ -35,12 +35,12 @@
       "href": "./gallery.html"
     },
     {
-      "type": "video",
-      "video": "./assets/images/Nexo_09.mp4",
-      "alt": "Proyecto vídeo 02",
-      "position": "50% 45%",
+      "type": "image",
+      "image": "./assets/images/Teatros_02.png",
+      "alt": "Proyecto 02",
+      "position": "50% 30%",
       "fit": "cover",
-      "href": "./project05.html"
+      "href": "./project02.html"
     },
     {
       "type": "image",
@@ -51,12 +51,12 @@
       "href": "./project03.html"
     },
     {
-      "type": "video",
-      "video": "./assets/images/Teatros_03.mp4",
-      "alt": "Proyecto vídeo 02",
-      "position": "50% 45%",
+      "type": "image",
+      "image": "./assets/images/Nexo_08.png",
+      "alt": "Proyecto 02",
+      "position": "50% 30%",
       "fit": "cover",
-      "href": "./gallery.html"
+      "href": "./project05.html"
     },
     {
       "type": "image",
