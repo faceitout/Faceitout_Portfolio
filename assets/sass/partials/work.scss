@@ -22,7 +22,8 @@
 
   &__media {
     overflow: hidden;
-    background: $color-surface;
+    background: var(--color-surface);
+    transition: background-color var(--theme-transition);
 
     img {
       display: block;
@@ -31,7 +32,9 @@
       object-fit: cover;
       transform: scale(1);
       transform-origin: center;
-      transition: filter 0.45s ease, transform 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+      transition:
+        filter 0.45s ease,
+        transform 0.6s cubic-bezier(0.22, 1, 0.36, 1);
     }
   }
 
@@ -57,7 +60,7 @@
       font-size: 0.8125rem;
       font-weight: 600;
       line-height: 1;
-      color: $meta-text-color;
+      color: $color-dark-bg;
       text-transform: uppercase;
       white-space: nowrap;
     }

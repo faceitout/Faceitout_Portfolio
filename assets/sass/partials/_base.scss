@@ -8,7 +8,7 @@
 
 html {
   scroll-behavior: auto;
-  background: $color-dark-bg;
+  background-color: var(--color-bg);
 }
 
 html.lenis,
@@ -26,25 +26,57 @@ html.lenis body {
 
 body {
   margin: 0;
+  min-height: 100vh;
   font-family: $font-primary;
-  color: $color-header-text;
+  color: var(--color-text);
+  background-color: var(--color-bg);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  transition:
+    color var(--theme-transition),
+    background-color var(--theme-transition);
+}
+
+#smooth-wrapper,
+#smooth-content,
+.site-wrapper {
+  min-height: 100vh;
+  color: var(--color-text);
+  background-color: var(--color-bg);
+  transition:
+    color var(--theme-transition),
+    background-color var(--theme-transition);
+}
+
+main,
+.home,
+.work-page,
+.gallery-page,
+.about-page,
+.project-page {
+  color: var(--color-text);
+  background-color: var(--color-bg);
+  transition:
+    color var(--theme-transition),
+    background-color var(--theme-transition);
 }
 
 a {
-  color: $link-text-color;
+  color: var(--color-link);
   text-decoration: $link-text-decoration;
-  transition: color 0.2s ease, opacity 0.2s ease, text-decoration 0.2s ease;
+  transition:
+    color var(--theme-transition),
+    opacity var(--theme-transition),
+    text-decoration var(--theme-transition);
 
   &:hover {
-    color: $link-hover-text-color;
+    color: var(--color-link-hover);
     text-decoration: $link-hover-text-decoration;
   }
 
   &[aria-current="page"],
   &.is-current {
-    color: $link-current-text-color;
+    color: var(--color-link-current);
     text-decoration: $link-current-text-decoration;
   }
 }
@@ -126,10 +158,11 @@ body * {
   position: fixed;
   inset: 0;
   z-index: 99999;
-  background: $color-dark-bg;
+  background: var(--color-bg);
   clip-path: inset(100% 0 0 0);
   pointer-events: none;
   will-change: clip-path;
+  transition: background-color var(--theme-transition);
 }
 
 body.is-transitioning {

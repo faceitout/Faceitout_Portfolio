@@ -11,6 +11,68 @@ window.addEventListener("pageshow", () => {
 });
 
 const clockElement = document.getElementById("clock");
+const themeToggleElements = Array.from(
+  document.querySelectorAll("[data-theme-toggle]")
+);
+const menuToggleElement = document.getElementById("menuToggle");
+const mobileMenuPanelElement = document.getElementById("mobileMenuPanel");
+const mobileMenuElement = document.getElementById("mobileMenu");
+const desktopMenuElement = document.getElementById("siteMenu");
+
+const THEME_STORAGE_KEY = "faceitout-theme";
+
+function getSavedTheme() {
+  try {
+    const savedTheme = localStorage.getItem(THEME_STORAGE_KEY);
+
+    if (savedTheme === "light" || savedTheme === "dark") {
+      return savedTheme;
+    }
+  } catch (error) {
+    console.warn("No se pudo leer el tema guardado:", error);
+  }
+
+  return "dark";
+}
+
+function saveTheme(theme) {
+  try {
+    localStorage.setItem(THEME_STORAGE_KEY, theme);
+  } catch (error) {
+    console.warn("No se pudo guardar el tema:", error);
+  }
+}
+
+function applyTheme(theme) {
+  const isLight = theme === "light";
+
+  document.body.classList.toggle("is-light", isLight);
+  document.documentElement.style.colorScheme = isLight ? "light" : "dark";
+
+  themeToggleElements.forEach((themeToggleElement) => {
+    themeToggleElement.setAttribute("aria-pressed", String(isLight));
+    themeToggleElement.setAttribute(
+      "aria-label",
+      isLight ? "Cambiar a modo oscuro" : "Cambiar a modo claro"
+    );
+  });
+}
+
+function initThemeToggle() {
+  const initialTheme = getSavedTheme();
+
+  applyTheme(initialTheme);
+
+  themeToggleElements.forEach((themeToggleElement) => {
+    themeToggleElement.addEventListener("click", () => {
+      const isCurrentlyLight = document.body.classList.contains("is-light");
+      const nextTheme = isCurrentlyLight ? "dark" : "light";
+
+      saveTheme(nextTheme);
+      applyTheme(nextTheme);
+    });
+  });
+}
 
 function updateClock() {
   if (!clockElement) return;
@@ -30,6 +92,113 @@ function updateClock() {
   clockElement.textContent = formatted;
 }
 
+function getFallbackMobileMenuMarkup() {
+  return `
+    <li class="mobile-menu__item">
+      <a class="mobile-menu__link" href="./work.html">Work</a>
+    </li>
+    <li class="mobile-menu__item">
+      <a class="mobile-menu__link" href="./gallery.html">Gallery</a>
+    </li>
+    <li class="mobile-menu__item">
+      <a class="mobile-menu__link" href="./about.html">About</a>
+    </li>
+  `;
+}
+
+function syncMobileMenu() {
+  if (!mobileMenuElement) return;
+
+  const desktopLinks = desktopMenuElement
+    ? Array.from(desktopMenuElement.querySelectorAll("a"))
+    : [];
+
+  if (!desktopLinks.length) {
+    mobileMenuElement.innerHTML = getFallbackMobileMenuMarkup();
+    return;
+  }
+
+  mobileMenuElement.innerHTML = desktopLinks
+    .map((link) => {
+      const href = link.getAttribute("href") || "#";
+      const label = link.textContent.trim();
+      const isCurrent =
+        link.classList.contains("is-current") ||
+        link.getAttribute("aria-current") === "page";
+
+      return `
+        <li class="mobile-menu__item">
+          <a
+            class="mobile-menu__link ${isCurrent ? "is-current" : ""}"
+            href="${href}"
+            ${isCurrent ? 'aria-current="page"' : ""}
+          >
+            ${label}
+          </a>
+        </li>
+      `;
+    })
+    .join("");
+}
+
+function setMobileMenuOpen(isOpen) {
+  if (!menuToggleElement || !mobileMenuPanelElement) return;
+
+  document.body.classList.toggle("is-menu-open", isOpen);
+
+  menuToggleElement.setAttribute("aria-expanded", String(isOpen));
+  menuToggleElement.setAttribute(
+    "aria-label",
+    isOpen ? "Cerrar menú" : "Abrir menú"
+  );
+
+  mobileMenuPanelElement.setAttribute("aria-hidden", String(!isOpen));
+}
+
+function initMobileMenu() {
+  if (!menuToggleElement || !mobileMenuPanelElement || !mobileMenuElement) return;
+
+  syncMobileMenu();
+
+  if (desktopMenuElement) {
+    const menuObserver = new MutationObserver(syncMobileMenu);
+
+    menuObserver.observe(desktopMenuElement, {
+      childList: true,
+      subtree: true,
+      attributes: true,
+      attributeFilter: ["class", "aria-current"]
+    });
+  }
+
+  menuToggleElement.addEventListener("click", () => {
+    const isOpen = document.body.classList.contains("is-menu-open");
+    setMobileMenuOpen(!isOpen);
+  });
+
+  mobileMenuPanelElement.addEventListener("click", (event) => {
+    const link = event.target.closest("a[href]");
+
+    if (link) {
+      setMobileMenuOpen(false);
+    }
+  });
+
+  document.addEventListener("keydown", (event) => {
+    if (event.key === "Escape") {
+      setMobileMenuOpen(false);
+    }
+  });
+
+  window.addEventListener("resize", () => {
+    if (window.innerWidth > 1024) {
+      setMobileMenuOpen(false);
+    }
+  });
+}
+
+initThemeToggle();
+initMobileMenu();
 updateClock();
 setInterval(updateClock, 1000);
 

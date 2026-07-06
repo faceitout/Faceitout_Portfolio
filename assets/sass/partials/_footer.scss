@@ -3,7 +3,9 @@
 .site-footer {
   width: 100%;
   padding: 0 1rem 1.5rem;
+  color: var(--color-text);
   background-color: transparent;
+  transition: color var(--theme-transition);
 
   &__inner {
     display: grid;
@@ -22,13 +24,15 @@
       justify-self: start;
 
       p {
+        margin: 0;
         font-family: $font-primary;
         font-size: $header-font-size;
         font-weight: 600;
         line-height: $header-line-height;
         letter-spacing: 0;
-        color: $color-header-logo;
+        color: var(--color-text);
         white-space: nowrap;
+        transition: color var(--theme-transition);
       }
     }
 
@@ -44,19 +48,19 @@
         font-weight: 600;
         line-height: $header-line-height;
         letter-spacing: 0;
-        color: $link-text-color;
+        color: var(--color-text);
         text-decoration: $link-text-decoration;
         white-space: nowrap;
-        transition: color 0.2s ease;
+        transition: color var(--theme-transition);
 
         &:hover {
-          color: $link-hover-text-color;
+          color: var(--color-link-hover);
           text-decoration: $link-hover-text-decoration;
         }
 
         &[aria-current="page"],
         &.is-current {
-          color: $link-current-text-color;
+          color: var(--color-link-current);
           text-decoration: $link-current-text-decoration;
         }
       }
@@ -70,22 +74,21 @@
         font-weight: 600;
         line-height: $header-line-height;
         letter-spacing: 0;
-        color: $link-text-color;
+        color: var(--color-text);
         text-decoration: $link-text-decoration;
         white-space: nowrap;
+        transition: color var(--theme-transition);
       }
 
       a {
-        transition: color 0.2s ease;
-
         &:hover {
-          color: $link-hover-text-color;
+          color: var(--color-link-hover);
           text-decoration: $link-hover-text-decoration;
         }
 
         &[aria-current="page"],
         &.is-current {
-          color: $link-current-text-color;
+          color: var(--color-link-current);
           text-decoration: $link-current-text-decoration;
         }
       }

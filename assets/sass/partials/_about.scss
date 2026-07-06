@@ -25,7 +25,8 @@
     font-weight: 600;
     line-height: 1.02;
     letter-spacing: 0;
-    color: $meta-text-color;
+    color: var(--color-text);
+    transition: color var(--theme-transition);
   }
 
   &__meta {
@@ -47,7 +48,8 @@
     font-size: 0.8125rem;
     font-weight: 500;
     line-height: 1.1;
-    color: $meta-text-color;
+    color: var(--color-muted);
+    transition: color var(--theme-transition);
   }
 
   &__meta-value {
@@ -55,14 +57,16 @@
     font-size: 1.5rem;
     font-weight: 600;
     line-height: 1.1;
-    color: $color-header-logo;
+    color: var(--color-text);
+    transition: color var(--theme-transition);
 
     a {
-      color: $color-header-logo;
+      color: var(--color-text);
       text-decoration: none;
+      transition: color var(--theme-transition);
 
       &:hover {
-        color: $link-hover-text-color;
+        color: var(--color-link-hover);
       }
     }
   }
@@ -72,8 +76,9 @@
     width: 100%;
     margin: 1.125rem 0 0;
     overflow: hidden;
-    background: $color-surface;
+    background: var(--color-surface);
     aspect-ratio: 1 / 1;
+    transition: background-color var(--theme-transition);
 
     img {
       display: block;

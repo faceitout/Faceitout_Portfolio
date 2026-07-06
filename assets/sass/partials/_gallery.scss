@@ -21,7 +21,8 @@
 .gallery-card__image-wrapper {
   width: 100%;
   overflow: hidden;
-  background-color: $color-surface;
+  background-color: var(--color-surface);
+  transition: background-color var(--theme-transition);
 }
 
 .gallery-card__image {
@@ -37,8 +38,10 @@
   font-size: 0.625rem;
   font-weight: 600;
   line-height: 1.1;
+  color: var(--color-text);
   text-transform: uppercase;
   letter-spacing: 0.02em;
+  transition: color var(--theme-transition);
 }
 
 .gallery-card--small .gallery-card__image-wrapper {
@@ -64,7 +67,6 @@
   will-change: transform, opacity;
 }
 
-/* móvil: siempre 1 columna */
 @media (max-width: 47.9375rem) {
   .gallery-grid {
     grid-template-columns: 1fr;

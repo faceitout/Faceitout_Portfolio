@@ -20,7 +20,8 @@
     font-weight: 600;
     line-height: 1.02;
     letter-spacing: 0;
-    color: $meta-text-color;
+    color: var(--color-text);
+    transition: color var(--theme-transition);
   }
 
   &__meta {
@@ -42,7 +43,8 @@
     font-size: 0.8125rem;
     font-weight: 500;
     line-height: 1.1;
-    color: $meta-text-color;
+    color: var(--color-muted);
+    transition: color var(--theme-transition);
   }
 
   &__meta-value {
@@ -50,14 +52,16 @@
     font-size: 1.5rem;
     font-weight: 600;
     line-height: 1.1;
-    color: $color-header-logo;
+    color: var(--color-text);
+    transition: color var(--theme-transition);
 
     a {
-      color: $color-header-logo;
+      color: var(--color-text);
       text-decoration: none;
+      transition: color var(--theme-transition);
 
       &:hover {
-        color: $link-hover-text-color;
+        color: var(--color-link-hover);
       }
     }
   }
@@ -74,7 +78,8 @@
     min-width: 0;
     margin: 0;
     overflow: hidden;
-    background: $color-surface;
+    background: var(--color-surface);
+    transition: background-color var(--theme-transition);
 
     img,
     video {
@@ -112,9 +117,9 @@
 .project-detail__next-link {
   display: inline-block;
   font-weight: inherit;
-  color: inherit;
+  color: var(--color-text);
   text-decoration: none;
-  transition: color 0.25s ease;
+  transition: color var(--theme-transition);
 }
 
 .project-detail__description,
@@ -124,7 +129,7 @@
 }
 
 .project-detail__next-link:hover {
-  color: $color-accent;
+  color: var(--color-link-hover);
 }
 
 .project-detail__intro,
