@@ -5,23 +5,28 @@
   },
   "menu": [
     {
-      "label": "Work",
+      "label": "WORKS",
       "href": "./work.html",
       "current": true
     },
     {
-      "label": "Gallery",
+      "label": "GALLERY",
       "href": "./gallery.html"
     },
     {
-      "label": "About",
+      "label": "ABOUT",
       "href": "./about.html"
     }
   ],
+  "startProject": {
+    "label": "START A PROJECT",
+    "hoverLabel": "GET IN TOUCH",
+    "href": "mailto:almudenaestevez23@gmail.com?subject=Start%20a%20project&body=Hola%20Almu%2C%20quiero%20hablar%20contigo%20sobre%20un%20proyecto."
+  },
   "projects": [
     {
       "id": "project05",
-      "title": "Nexo / Rediseño Rakuten TV",
+      "title": "Nexo",
       "description": "Rediseño estratégico, visual y audiovisual de Rakuten TV bajo una nueva identidad: Nexo. El proyecto replantea la marca como una plataforma más clara, flexible y conectada con el usuario, reforzando la diferencia entre contenido gratuito, alquiler, compra y canales. La propuesta incluye sistema visual, lenguaje motion, piezas on air, pantallas de experiencia y recursos audiovisuales para construir una identidad más reconocible y coherente.",
       "client": "Nexo / Rakuten TV",
       "disciplines": [
@@ -31,47 +36,95 @@
         "On Air Design"
       ],
       "year": "2026",
+      "software": [
+        "Illustrator",
+        "Photoshop",
+        "After Effects",
+        "Figma"
+      ],
+      "coverImage": "./assets/images/nexo/01.png",
+      "heroImage": "./assets/images/nexo/01.png",
       "linkLabel": "ver proyecto entero",
       "linkHref": "#",
       "gallery": [
         {
-          "image": "./assets/images/Nexo_07.png",
-          "alt": "Proyecto 05 imagen 01"
-        },
-        {
-          "image": "./assets/images/Nexo_03.png",
-          "alt": "Proyecto 05 imagen 02"
-        },
-        {
-          "image": "./assets/images/Nexo_04.png",
-          "alt": "Proyecto 05 imagen 03"
-        },
-        {
-          "image": "./assets/images/Nexo_06.png",
-          "alt": "Proyecto 05 imagen 04"
-        },
-        {
-          "image": "./assets/images/Nexo_02.png",
-          "alt": "Proyecto 05 imagen 05"
-        },
-        {
+          "layout": "wide",
           "type": "video",
-          "video": "./assets/images/Nexo_09.mp4",
-          "alt": "Nexo Video"
+          "video": "./assets/images/nexo/02.mp4",
+          "alt": "Nexo bloque 01 video",
+          "sound": true
         },
         {
-          "image": "./assets/images/Nexo_05.png",
-          "alt": "Proyecto 05 imagen 07"
+          "layout": "half",
+          "type": "image",
+          "image": "./assets/images/nexo/03.png",
+          "alt": "Nexo bloque 02"
         },
         {
-          "image": "./assets/images/Nexo_01.png",
-          "alt": "Proyecto 05 imagen 08"
+          "layout": "half",
+          "type": "image",
+          "image": "./assets/images/nexo/04.png",
+          "alt": "Nexo bloque 03"
+        },
+        {
+          "layout": "wide",
+          "type": "video",
+          "video": "./assets/images/nexo/05.mp4",
+          "alt": "Nexo bloque 04 video"
+        },
+        {
+          "layout": "half",
+          "type": "image",
+          "image": "./assets/images/nexo/06.png",
+          "alt": "Nexo bloque 05"
+        },
+        {
+          "layout": "half",
+          "type": "image",
+          "image": "./assets/images/nexo/07.png",
+          "alt": "Nexo bloque 06"
+        },
+        {
+          "layout": "third",
+          "type": "video",
+          "video": "./assets/images/nexo/08.mp4",
+          "alt": "Nexo bloque 07 video"
+        },
+        {
+          "layout": "third",
+          "type": "video",
+          "video": "./assets/images/nexo/09.mp4",
+          "alt": "Nexo bloque 08 video"
+        },
+        {
+          "layout": "third",
+          "type": "video",
+          "video": "./assets/images/nexo/10.mp4",
+          "alt": "Nexo bloque 09 video"
+        },
+        {
+          "layout": "wide",
+          "type": "image",
+          "image": "./assets/images/nexo/11.png",
+          "alt": "Nexo bloque 10"
+        },
+        {
+          "layout": "half",
+          "type": "image",
+          "image": "./assets/images/nexo/12.png",
+          "alt": "Nexo bloque 11"
+        },
+        {
+          "layout": "half",
+          "type": "image",
+          "image": "./assets/images/nexo/13.png",
+          "alt": "Nexo bloque 12"
         }
       ]
     },
     {
       "id": "project02",
-      "title": "TEATROS DEL CANAL",
+      "title": "Teatros del Canal",
       "description": "Rediseño de la identidad de Teatros del Canal desde una mirada más contemporánea, clara y flexible. Un sistema visual pensado para reforzar su carácter cultural y adaptarse con coherencia a distintos formatos y soportes.",
       "client": "Teatros del Canal",
       "disciplines": [
@@ -81,49 +134,94 @@
         "Flexible visual identity"
       ],
       "year": "2025",
+      "software": [
+        "Illustrator",
+        "Photoshop",
+        "After Effects"
+      ],
+      "coverImage": "./assets/images/teatros/01.png",
+      "heroImage": "./assets/images/teatros/01.png",
       "linkLabel": "ver proyecto entero",
+      "linkHref": "#",
       "gallery": [
         {
-          "type": "image",
-          "image": "./assets/images/Teatros_01.png",
-          "alt": "Teatros del Canal Img"
-        },
-        {
+          "layout": "wide",
           "type": "video",
-          "video": "./assets/images/Teatros_03.mp4",
-          "alt": "Teatros del Canal Video"
+          "video": "./assets/images/teatros/02.mp4",
+          "alt": "Nexo bloque 01 video",
+          "sound": true
         },
         {
+          "layout": "half",
           "type": "image",
-          "image": "./assets/images/Teatros_04.png",
-          "alt": "Teatros del Canal Img"
+          "image": "./assets/images/teatros/03.png",
+          "alt": "Nexo bloque 02"
         },
         {
+          "layout": "half",
           "type": "image",
-          "image": "./assets/images/Teatros_05.png",
-          "alt": "Teatros del Canal Img"
+          "image": "./assets/images/teatros/04.png",
+          "alt": "Nexo bloque 03"
         },
         {
-          "image": "./assets/images/Teatros_02.png",
-          "alt": "Proyecto 02 imagen 05"
+          "layout": "wide",
+          "type": "image",
+          "image": "./assets/images/teatros/05.png",
+          "alt": "Nexo bloque 03"
         },
         {
-          "image": "./assets/images/Teatros_06.png",
-          "alt": "Proyecto 02 imagen 06"
+          "layout": "half",
+          "type": "image",
+          "image": "./assets/images/teatros/06.png",
+          "alt": "Nexo bloque 05"
         },
         {
-          "image": "./assets/images/Teatros_07.png",
-          "alt": "Proyecto 02 imagen 07"
+          "layout": "half",
+          "type": "image",
+          "image": "./assets/images/teatros/07.png",
+          "alt": "Nexo bloque 06"
         },
         {
-          "image": "./assets/images/Teatros_08.png",
-          "alt": "Proyecto 02 imagen 08"
+          "layout": "third",
+          "type": "image",
+          "image": "./assets/images/teatros/08.png",
+          "alt": "Nexo bloque 06"
+        },
+        {
+          "layout": "third",
+          "type": "image",
+          "image": "./assets/images/teatros/09.png",
+          "alt": "Nexo bloque 06"
+        },
+        {
+          "layout": "third",
+          "type": "image",
+          "image": "./assets/images/teatros/10.png",
+          "alt": "Nexo bloque 06"
+        },
+        {
+          "layout": "wide",
+          "type": "image",
+          "image": "./assets/images/teatros/11.png",
+          "alt": "Nexo bloque 06"
+        },
+        {
+          "layout": "half",
+          "type": "image",
+          "image": "./assets/images/teatros/12.jpg",
+          "alt": "Nexo bloque 06"
+        },
+        {
+          "layout": "half",
+          "type": "image",
+          "image": "./assets/images/teatros/13.png",
+          "alt": "Nexo bloque 06"
         }
       ]
     },
     {
       "id": "project03",
-      "title": "Fanzine Sen Senra / PO2054AZ",
+      "title": "Fanzine P02054AZ - Sen Senra",
       "description": "Diseño y realización de un fanzine experimental basado en la unión de los tres volúmenes de PO2054AZ de Sen Senra. El proyecto interpreta visualmente el recorrido del artista a través de sus álbumes, trabajando con canales, semitonos, capas, texturas e intervenciones gráficas hasta construir una pieza editorial con carácter de libro-objeto.",
       "client": "Proyecto personal / Sen Senra",
       "disciplines": [
@@ -133,44 +231,77 @@
         "Arte final"
       ],
       "year": "2025",
+      "software": [
+        "InDesign",
+        "Photoshop",
+        "Illustrator"
+      ],
+      "coverImage": "./assets/images/sensenra/01.png",
+      "heroImage": "./assets/images/sensenra/01.png",
       "linkLabel": "ver proyecto entero",
+      "linkHref": "#",
       "gallery": [
         {
+          "layout": "wide",
           "type": "image",
-          "image": "./assets/images/Sen_07.png",
-          "alt": "Sen Senra Img"
+          "image": "./assets/images/sensenra/02.png",
+          "alt": "Nexo bloque 02"
         },
         {
+          "layout": "third",
           "type": "image",
-          "image": "./assets/images/Sen_02.png",
-          "alt": "Sen Senra Img"
+          "image": "./assets/images/sensenra/03.png",
+          "alt": "Nexo bloque 02"
         },
         {
+          "layout": "third",
           "type": "image",
-          "image": "./assets/images/Sen_03.png",
-          "alt": "Sen Senra Img"
+          "image": "./assets/images/sensenra/04.png",
+          "alt": "Nexo bloque 03"
         },
         {
+          "layout": "third",
           "type": "image",
-          "image": "./assets/images/Sen_05.png",
-          "alt": "Sen Senra Img"
+          "image": "./assets/images/sensenra/05.png",
+          "alt": "Nexo bloque 02"
         },
         {
-          "image": "./assets/images/Sen_04.png",
-          "alt": "Sen Senra Img"
+          "layout": "wide",
+          "type": "image",
+          "image": "./assets/images/sensenra/06.png",
+          "alt": "Nexo bloque 05"
         },
         {
-          "image": "./assets/images/Sen_06.png",
-          "alt": "Sen Senra Img"
+          "layout": "half",
+          "type": "image",
+          "image": "./assets/images/sensenra/07.png",
+          "alt": "Nexo bloque 06"
         },
         {
-          "image": "./assets/images/Sen_08.png",
-          "alt": "Sen Senra Img"
+          "layout": "half",
+          "type": "image",
+          "image": "./assets/images/sensenra/08.png",
+          "alt": "Nexo bloque 02"
         },
         {
-          "image": "./assets/images/Sen_01.png",
-          "alt": "Sen Senra Img"
+          "layout": "wide",
+          "type": "image",
+          "image": "./assets/images/sensenra/09.png",
+          "alt": "Nexo bloque 02"
+        },
+        {
+          "layout": "half",
+          "type": "image",
+          "image": "./assets/images/sensenra/10.png",
+          "alt": "Nexo bloque 02"
+        },
+        {
+          "layout": "half",
+          "type": "image",
+          "image": "./assets/images/sensenra/11.png",
+          "alt": "Nexo bloque 10"
         }
+
       ]
     },
     {
@@ -185,47 +316,94 @@
         "Motion"
       ],
       "year": "2025",
+      "software": [
+        "Illustrator",
+        "Photoshop",
+        "After Effects"
+      ],
+      "coverImage": "./assets/images/chimpatia/01.png",
+      "heroImage": "./assets/images/chimpatia/01.png",
       "linkLabel": "ver proyecto entero",
       "linkHref": "#",
       "gallery": [
         {
-          "image": "./assets/images/Chim_01.png",
-          "alt": "Proyecto 04 imagen 01"
+          "layout": "wide",
+          "type": "image",
+          "image": "./assets/images/chimpatia/02.png",
+          "alt": "Nexo bloque 02"
         },
         {
-          "image": "./assets/images/Chim_02.png",
-          "alt": "Proyecto 04 imagen 02"
+          "layout": "half",
+          "type": "image",
+          "image": "./assets/images/chimpatia/03.png",
+          "alt": "Nexo bloque 02"
         },
         {
-          "image": "./assets/images/Chim_08.png",
-          "alt": "Proyecto 04 imagen 03"
+          "layout": "half",
+          "type": "image",
+          "image": "./assets/images/chimpatia/04.png",
+          "alt": "Nexo bloque 03"
         },
         {
-          "image": "./assets/images/Chim_04.png",
-          "alt": "Proyecto 04 imagen 04"
+          "layout": "wide",
+          "type": "image",
+          "image": "./assets/images/chimpatia/05.png",
+          "alt": "Nexo bloque 03"
         },
         {
-          "image": "./assets/images/Chim_05.png",
-          "alt": "Proyecto 04 imagen 05"
+          "layout": "half",
+          "type": "image",
+          "image": "./assets/images/chimpatia/06.png",
+          "alt": "Nexo bloque 05"
         },
         {
-          "image": "./assets/images/Chim_03.png",
-          "alt": "Proyecto 04 imagen 06"
+          "layout": "half",
+          "type": "image",
+          "image": "./assets/images/chimpatia/07.png",
+          "alt": "Nexo bloque 06"
         },
         {
-          "image": "./assets/images/Chim_06.png",
-          "alt": "Proyecto 04 imagen 07"
+          "layout": "third",
+          "type": "image",
+          "image": "./assets/images/chimpatia/08.png",
+          "alt": "Nexo bloque 06"
         },
         {
+          "layout": "third",
+          "type": "image",
+          "image": "./assets/images/chimpatia/09.png",
+          "alt": "Nexo bloque 06"
+        },
+        {
+          "layout": "third",
+          "type": "image",
+          "image": "./assets/images/chimpatia/10.png",
+          "alt": "Nexo bloque 06"
+        },
+        {
+          "layout": "wide",
           "type": "video",
-          "video": "./assets/images/Chim_07.mp4",
-          "alt": "Teatros del Canal Video"
+          "video": "./assets/images/chimpatia/11.mp4",
+          "alt": "Nexo bloque 04 video",
+          "sound": true
+        },
+        {
+          "layout": "half",
+          "type": "image",
+          "image": "./assets/images/chimpatia/12.png",
+          "alt": "Nexo bloque 11"
+        },
+        {
+          "layout": "half",
+          "type": "image",
+          "image": "./assets/images/chimpatia/13.png",
+          "alt": "Nexo bloque 12"
         }
       ]
     },
     {
       "id": "project01",
-      "title": "No Labels: Art and Design Festival",
+      "title": "No Labels - Art and Design Festival",
       "description": "Desarrollo de la identidad visual de No Labels, un festival de arte y diseño enfocado en la creatividad emergente, la experimentación y la libre expresión. Un sistema visual urbano, flexible y enérgico, pensado para adaptarse a piezas impresas, digitales y audiovisuales.",
       "client": "No Labels Festival",
       "disciplines": [
@@ -234,67 +412,208 @@
         "Flexible brand identity"
       ],
       "year": "2025",
-      "linkLabel": "link.al.proyecto",
+      "software": [
+        "Illustrator",
+        "Photoshop",
+        "Figma"
+      ],
+      "coverImage": "./assets/images/nolabels/01.png",
+      "heroImage": "./assets/images/nolabels/01.png",
+      "linkLabel": "ver proyecto entero",
+      "linkHref": "#",
       "gallery": [
         {
+          "layout": "wide",
+         "type": "image",
+          "image": "./assets/images/nolabels/02.png",
+          "alt": "Nexo bloque 02"
+        },
+        {
+          "layout": "half",
           "type": "image",
-          "image": "./assets/images/Labels_07.png",
-          "alt": "No Labels Img"
+          "image": "./assets/images/nolabels/03.png",
+          "alt": "Nexo bloque 02"
         },
         {
+          "layout": "half",
           "type": "image",
-          "image": "./assets/images/Labels_08.png",
-          "alt": "No Labels Img"
+          "image": "./assets/images/nolabels/04.png",
+          "alt": "Nexo bloque 03"
         },
         {
+          "layout": "wide",
           "type": "image",
-          "image": "./assets/images/Labels_03.PNG",
-          "alt": "No Labels Img"
+          "image": "./assets/images/nolabels/05.png",
+          "alt": "Nexo bloque 02"
         },
         {
+          "layout": "half",
           "type": "image",
-          "image": "./assets/images/Labels_04.PNG",
-          "alt": "No Labels Img"
+          "image": "./assets/images/nolabels/06.png",
+          "alt": "Nexo bloque 05"
         },
         {
-          "image": "./assets/images/Labels_02.PNG",
-          "alt": "No Labels Img"
+          "layout": "half",
+          "type": "image",
+          "image": "./assets/images/nolabels/07.png",
+          "alt": "Nexo bloque 06"
         },
         {
-          "image": "./assets/images/Labels_06.PNG",
-          "alt": "No Labels Img"
+          "layout": "third",
+          "type": "image",
+          "image": "./assets/images/nolabels/08.png",
+          "alt": "Nexo bloque 02"
         },
         {
-          "image": "./assets/images/Labels_05.PNG",
-          "alt": "No Labels Img"
+          "layout": "third",
+          "type": "image",
+          "image": "./assets/images/nolabels/09.png",
+          "alt": "Nexo bloque 02"
         },
         {
-          "image": "./assets/images/Labels_01.png",
-          "alt": "No Labels Img"
+          "layout": "third",
+          "type": "image",
+          "image": "./assets/images/nolabels/10.png",
+          "alt": "Nexo bloque 02"
+        },
+        {
+          "layout": "wide",
+          "type": "image",
+          "image": "./assets/images/nolabels/11.png",
+          "alt": "Nexo bloque 10"
+        },
+        {
+          "layout": "half",
+          "type": "image",
+          "image": "./assets/images/nolabels/12.png",
+          "alt": "Nexo bloque 11"
+        },
+        {
+          "layout": "half",
+          "type": "image",
+          "image": "./assets/images/nolabels/13.png",
+          "alt": "Nexo bloque 12"
+        }
+      ]
+    },
+    {
+      "id": "project06",
+      "title": "Catrillo de Riopisuerga",
+      "description": "Rediseño de la identidad visual de Castrillo de Riopisuerga, transformando su escudo tradicional en una identidad más clara, contemporánea y flexible. El proyecto conserva los elementos representativos del municipio, el castillo, el río Pisuerga y el trigo, y los integra en un sistema visual adaptable a diferentes formatos, aplicaciones y soportes.",
+      "client": ["Ayuntamiento de Riopisuerga",
+      "Ana Dubon"
+      ],
+      "disciplines": [
+        "Branding",
+        "Idenitdad Visual",
+        "Dirección de Arte"
+      ],
+      "year": "2026",
+      "software": [
+        "Illustrator",
+        "Photoshop",
+        "Figma"
+      ],
+      "coverImage": "./assets/images/pueblo/01.png",
+      "heroImage": "./assets/images/pueblo/01.png",
+      "linkLabel": "ver proyecto entero",
+      "linkHref": "#",
+      "gallery": [
+        {
+          "layout": "wide",
+         "type": "image",
+          "image": "./assets/images/pueblo/02.png",
+          "alt": "Nexo bloque 02"
+        },
+        {
+          "layout": "half",
+          "type": "image",
+          "image": "./assets/images/pueblo/03.png",
+          "alt": "Nexo bloque 02"
+        },
+        {
+          "layout": "half",
+          "type": "image",
+          "image": "./assets/images/pueblo/04.png",
+          "alt": "Nexo bloque 03"
+        },
+        {
+          "layout": "wide",
+          "type": "image",
+          "image": "./assets/images/pueblo/05.png",
+          "alt": "Nexo bloque 02"
+        },
+        {
+          "layout": "half",
+          "type": "image",
+          "image": "./assets/images/pueblo/06.png",
+          "alt": "Nexo bloque 05"
+        },
+        {
+          "layout": "half",
+          "type": "image",
+          "image": "./assets/images/pueblo/07.png",
+          "alt": "Nexo bloque 06"
+        },
+        {
+          "layout": "third",
+          "type": "image",
+          "image": "./assets/images/pueblo/08.png",
+          "alt": "Nexo bloque 02"
+        },
+        {
+          "layout": "third",
+          "type": "image",
+          "image": "./assets/images/pueblo/09.png",
+          "alt": "Nexo bloque 02"
+        },
+        {
+          "layout": "third",
+          "type": "image",
+          "image": "./assets/images/pueblo/10.png",
+          "alt": "Nexo bloque 02"
+        },
+        {
+          "layout": "wide",
+          "type": "image",
+          "image": "./assets/images/pueblo/11.png",
+          "alt": "Nexo bloque 10"
+        },
+        {
+          "layout": "half",
+          "type": "image",
+          "image": "./assets/images/pueblo/12.png",
+          "alt": "Nexo bloque 11"
+        },
+        {
+          "layout": "half",
+          "type": "image",
+          "image": "./assets/images/pueblo/13.png",
+          "alt": "Nexo bloque 12"
         }
       ]
     }
   ],
   "footer": {
-    "copyright": "© 2026 faceitout",
+    "copyright": "© 2026 FACEITOUT",
     "social": [
       {
-        "label": "Instagram",
+        "label": "EMAIL",
+        "href": "mailto:almudenaestevez23@gmail.com"
+      },
+      {
+        "label": "INSTAGRAM",
         "href": "https://www.instagram.com/face.itout?igsh=a2trcHo4Mjk2dmI%3D&utm_source=qr"
       },
       {
-        "label": "Tik Tok",
+        "label": "TIKTOK",
         "href": "https://www.tiktok.com/@face.itout?_r=1&_t=ZN-95yeSowWLUV"
       },
       {
-        "label": "Behance",
+        "label": "BEHANCE",
         "href": "#"
       }
     ],
-    "contact": {
-      "email": "almudenaestevez23@gmail.com",
-      "phoneLabel": "(+34) 638455663",
-      "phoneHref": "tel:+34638455663"
-    }
+    "credit": "DESIGNED BY ALMU ESTEVEZ :)"
   }
 }

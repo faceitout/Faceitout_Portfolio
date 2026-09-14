@@ -5,88 +5,42 @@
   },
   "menu": [
     {
-      "label": "Work",
+      "label": "WORKS",
       "href": "./work.html"
     },
     {
-      "label": "Gallery",
+      "label": "GALLERY",
       "href": "./gallery.html"
     },
     {
-      "label": "About",
+      "label": "ABOUT",
       "href": "./about.html"
     }
   ],
-  "carousel": [
-    {
-      "type": "image",
-      "image": "./assets/images/Chim_09.png",
-      "alt": "Proyecto 02",
-      "position": "50% 30%",
-      "fit": "cover",
-      "href": "./project04.html"
-    },
-    {
-      "type": "image",
-      "image": "./assets/images/Cartel_02.png",
-      "alt": "Proyecto 02",
-      "position": "50% 30%",
-      "fit": "cover",
-      "href": "./gallery.html"
-    },
-    {
-      "type": "image",
-      "image": "./assets/images/Teatros_02.png",
-      "alt": "Proyecto 02",
-      "position": "50% 30%",
-      "fit": "cover",
-      "href": "./project02.html"
-    },
-    {
-      "type": "image",
-      "image": "./assets/images/Sen_04.png",
-      "alt": "Proyecto 02",
-      "position": "50% 50%",
-      "fit": "cover",
-      "href": "./project03.html"
-    },
-    {
-      "type": "image",
-      "image": "./assets/images/Nexo_08.png",
-      "alt": "Proyecto 02",
-      "position": "50% 30%",
-      "fit": "cover",
-      "href": "./project05.html"
-    },
-    {
-      "type": "image",
-      "image": "./assets/images/Cartel_03.png",
-      "alt": "Proyecto 02",
-      "position": "50% 92%",
-      "fit": "cover",
-      "href": "./gallery.html"
-    }
-  ],
+  "startProject": {
+    "label": "START A PROJECT",
+    "href": "mailto:almudenaestevez23@gmail.com?subject=Start%20a%20project&body=Hola%20Almu%2C%20quiero%20hablar%20contigo%20sobre%20un%20proyecto."
+  },
   "footer": {
-    "copyright": "© 2026 faceitout",
+    "copyright": "© 2026 FACEITOUT",
     "social": [
       {
-        "label": "Instagram",
+        "label": "EMAIL",
+        "href": "mailto:almudenaestevez23@gmail.com"
+      },
+      {
+        "label": "INSTAGRAM",
         "href": "https://www.instagram.com/face.itout?igsh=a2trcHo4Mjk2dmI%3D&utm_source=qr"
       },
       {
-        "label": "Tik Tok",
+        "label": "TIKTOK",
         "href": "https://www.tiktok.com/@face.itout?_r=1&_t=ZN-95yeSowWLUV"
       },
       {
-        "label": "Behance",
+        "label": "BEHANCE",
         "href": "#"
       }
     ],
-    "contact": {
-      "email": "almudenaestevez23@gmail.com",
-      "phoneLabel": "(+34) 638455663",
-      "phoneHref": "tel:+34638455663"
-    }
+    "credit": "DESIGNED BY ALMU ESTEVEZ :)"
   }
 }

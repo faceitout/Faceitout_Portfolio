@@ -5,90 +5,105 @@
   },
   "menu": [
     {
-      "label": "Work",
+      "label": "WORKS",
       "href": "./work.html"
     },
     {
-      "label": "Gallery",
+      "label": "GALLERY",
       "href": "./gallery.html"
     },
     {
-      "label": "About",
+      "label": "ABOUT",
       "href": "./about.html",
       "current": true
     }
   ],
+  "startProject": {
+    "label": "START A PROJECT",
+    "hoverLabel": "GET IN TOUCH",
+    "href": "mailto:almudenaestevez23@gmail.com?subject=Start%20a%20project&body=Hola%20Almu%2C%20quiero%20hablar%20contigo%20sobre%20un%20proyecto."
+  },
   "about": {
-    "description": "Soy Almudena Estévez, diseñadora gráfica centrada en branding, diseño digital, sistemas de diseño, UI/UX, dirección de arte, editorial y motion. Me gusta abordar proyectos diferentes partiendo siempre de una base visual sólida, pero buscando una perspectiva propia que permita construir soluciones claras, contemporáneas y flexibles. Desarrollo identidades visuales y sistemas creativos capaces de adaptarse con coherencia a distintos formatos y soportes, combinando diferentes herramientas y procesos de trabajo según las necesidades de cada proyecto.",
-    "meta": [
+    "headlineLines": [
+      "HEY.SOY ALMU :) – UNA DISEÑADORA",
+      "GRÁFICA DE 23 AÑOS CON GANAS",
+      "DE CREAR COSAS DIFERENTES."
+    ],
+    "introLabel": "SOBRE MI",
+    "descriptionParagraphs": [
+      "Me gusta abordar proyectos diferentes partiendo siempre de una base visual sólida, pero buscando una perspectiva propia que permita construir soluciones claras, contemporáneas y flexibles.",
+      "Desarrollo identidades visuales y sistemas creativos capaces de adaptarse con coherencia a distintos formatos y soportes, combinando diferentes herramientas y procesos de trabajo según las necesidades de cada proyecto."
+    ],
+    "sections": [
       {
-        "label": "Social",
+        "label": "SERVICIOS",
+        "type": "lines",
+        "lines": [
+          "BRANDING",
+          "UI/UX DESIGN",
+          "DESIGN SYSTEMS",
+          "ART DIRECTION",
+          "EDITORIAL",
+          "VISUAL DESIGN"
+        ]
+      },
+      {
+        "label": "SOFTWARES",
+        "type": "text",
+        "value": "ILUSTRATOR/ PHOTOSHOP/ AFTER EFFECTS/ INDESIGN/ FIGMA/ BLENDER/ TOUCHDESIGNER/ NOTION/ VISUAL CODE"
+      },
+      {
+        "label": "SOCIAL",
+        "type": "links",
         "links": [
           {
-            "label": "Instagram",
+            "label": "INSTAGRAM",
             "href": "https://www.instagram.com/face.itout?igsh=a2trcHo4Mjk2dmI%3D&utm_source=qr"
           },
           {
-            "label": "Tik Tok",
+            "label": "TIKTOK",
             "href": "https://www.tiktok.com/@face.itout?_r=1&_t=ZN-95yeSowWLUV"
           },
           {
-            "label": "Behance",
+            "label": "BEHANCE",
             "href": "#"
           }
         ]
       },
       {
-        "label": "CV",
-        "linkLabel": "Descargar CV",
-        "linkHref": "./assets/images/CV_Almudena_Estévez_.pdf"
-      },
-      {
-        "label": "Servicios",
-        "lines": [
-          "Branding",
-          "UI/UX Design",
-          "Design Systems",
-          "Art Direction",
-          "Editorial",
-          "Visual Design"
-        ]
-      },
-      {
-        "label": "Contacto",
-        "lines": [
-          "almudenaestevez23@gmail.com",
-          "(+34)638455663"
-        ]
+        "label": "CONTACTO",
+        "type": "email",
+        "value": "ALMUDENAESTEVEZ23@GMAIL.COM",
+        "href": "mailto:almudenaestevez23@gmail.com"
       }
     ],
     "image": {
       "src": "./assets/images/Yo.jpg",
-      "alt": "Imagen About",
+      "alt": "Almudena Estévez",
       "position": "50% 50%",
       "fit": "cover"
     }
   },
   "footer": {
-    "copyright": "© 2026 faceitout",
+    "copyright": "© 2026 FACEITOUT",
     "social": [
       {
-        "label": "Instagram",
+        "label": "EMAIL",
+        "href": "mailto:almudenaestevez23@gmail.com"
+      },
+      {
+        "label": "INSTAGRAM",
         "href": "https://www.instagram.com/face.itout?igsh=a2trcHo4Mjk2dmI%3D&utm_source=qr"
       },
       {
-        "label": "Tik Tok",
+        "label": "TIKTOK",
         "href": "https://www.tiktok.com/@face.itout?_r=1&_t=ZN-95yeSowWLUV"
       },
       {
-        "label": "Behance",
+        "label": "BEHANCE",
         "href": "#"
       }
     ],
-    "contact": {
-      "email": "almudenaestevez23@gmail.com",
-      "phoneLabel": "(+34) 638455663",
-      "phoneHref": "tel:+34638455663"
-    }
+    "credit": "DESIGNED BY ALMU ESTEVEZ :)"
   }
 }

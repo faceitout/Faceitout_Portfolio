@@ -5,7 +5,7 @@
   },
   "menu": [
     {
-      "label": "Work",
+      "label": "Works",
       "href": "./work.html",
       "current": true
     },
@@ -22,65 +22,80 @@
     {
       "title": "Nexo",
       "year": "2026",
-      "tags": "IDENTIDAD DE MARCA, MOTION",
-      "image": "./assets/images/Nexo_08.png",
-      "alt": "Teatros del Canal",
-      "href": "./project05.html"
+      "tags": "REDISEÑO DE MARCA, MOTION",
+      "image": "./assets/images/nexo/04.png",
+      "alt": "Nexo",
+      "href": "./project05.html",
+      "hoverVideo": "./assets/images/nexo/05.mp4"
     },
     {
       "title": "TEATROS DEL CANAL",
       "year": "2025",
-      "tags": "IDENTIDAD DE MARCA, MOTION",
+      "tags": "REDISEÑO DE MARCA, BRANDING",
       "type": "image",
-      "image": "./assets/images/Teatros_02.png",
-      "alt": "Teatros del Canal",
-      "href": "./project02.html"
+      "image": "./assets/images/teatros/01.png",
+      "alt": "Teatros",
+      "href": "./project02.html",
+      "hoverVideo": "./assets/images/teatros/02.mp4"
     },
     {
       "title": "Fanzine P02054AZ - Sen Senra",
       "year": "2025",
-      "tags": "Editorial, arte final, experimental",
-      "image": "./assets/images/Sen_04.png",
-      "alt": "Po...",
-      "href": "./project03.html"
+      "tags": "Editorial, experimental",
+      "image": "./assets/images/sensenra/01.png",
+      "alt": "SEnsenra",
+      "href": "./project03.html",
+      "hoverVideo": "./assets/images/sensenra/12.mp4"
     },
     {
       "title": "FUNDACIÓN CHIMPATÍA",
       "year": "2025",
-      "tags": "IDENTIDAD DE MARCA, MOTION",
-      "image": "./assets/images/Chim_09.png",
+      "tags": "IDENTIDAD DE MARCA, BRANDING",
+      "image": "./assets/images/chimpatia/01.png",
       "alt": "Fundación Chimpatía",
-      "href": "./project04.html"
+      "href": "./project04.html",
+      "hoverVideo": "./assets/images/chimpatia/11.mp4"
+    },
+    {
+      "title": "Castrillo de Riopisuerga",
+      "year": "2026",
+      "tags": "REDISEÑO DE MARCA, IDENTIDAD",
+      "image": "./assets/images/pueblo/01.png",
+      "alt": "Castrillo de Riopisuerga",
+      "href": "./project06.html",
+      "hoverVideo": "./assets/images/pueblo/14.mp4"
     },
     {
       "title": "No Labels - Art and Design Festival",
       "year": "2025",
-      "tags": "IDENTIDAD DE MARCA, MOTION",
-      "image": "./assets/images/Labels_02.PNG",
+      "tags": "IDENTIDAD DE MARCA, BRANDING",
+      "image": "./assets/images/nolabels/01.png",
       "alt": "No Labels",
-      "href": "./project01.html"
+      "href": "./project01.html",
+      "hoverVideo": "./assets/images/nolabels/14.mp4"
     }
   ],
   "footer": {
-    "copyright": "© 2026 faceitout",
-    "social": [
-      {
-        "label": "Instagram",
-        "href": "https://www.instagram.com/face.itout?igsh=a2trcHo4Mjk2dmI%3D&utm_source=qr"
-      },
-      {
-        "label": "Tik Tok",
-        "href": "https://www.tiktok.com/@face.itout?_r=1&_t=ZN-95yeSowWLUV"
-      },
-      {
-        "label": "Behance",
-        "href": "#"
-      }
-    ],
-    "contact": {
-      "email": "almudenaestevez23@gmail.com",
-      "phoneLabel": "(+34) 638455663",
-      "phoneHref": "tel:+34638455663"
+  "copyright": "© 2026 FACEITOUT",
+  "social": [
+    {
+      "label": "EMAIL",
+      "href": "mailto:almudenaestevez23@gmail.com"
+    },
+    {
+      "label": "INSTAGRAM",
+      "href": "https://www.instagram.com/face.itout?igsh=a2trcHo4Mjk2dmI%3D&utm_source=qr"
+    },
+    {
+      "label": "TIKTOK",
+      "href": "https://www.tiktok.com/@face.itout?_r=1&_t=ZN-95yeSowWLUV"
+    },
+    {
+      "label": "BEHANCE",
+      "href": "#"
     }
+  ],
+  "credit": "DESIGNED BY ALMU ESTEVEZ :)"
+
   }
 }

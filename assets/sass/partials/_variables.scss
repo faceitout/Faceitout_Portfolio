@@ -1,20 +1,24 @@
-$font-primary: "Neue Haas Grotesk", Arial, Helvetica, sans-serif;
+$font-primary: "Neue Haas Grotesk Text Pro", "Neue Haas Grotesk", Arial, Helvetica, sans-serif;
+$font-display: "Neue Haas Grotesk", "Neue Haas Grotesk Text Pro", Arial, Helvetica, sans-serif;
 $font-mono: "Geist Mono", "Courier New", monospace;
 
-$color-bg: #d9d9d9;
-$color-dark-bg: rgb(32, 32, 32);
+/* COLORES BASE */
+
+$color-bg: #ffffff;
+$color-dark-bg: #000000;
 $color-light-bg: #ffffff;
-$color-accent: rgb(175, 168, 255);
+$color-accent: rgba(70, 0, 255, 1);
 
-$color-header-bg: rgba(176, 176, 176, 0.2);
-$color-header-logo: $color-bg;
-$color-header-text: $color-bg;
-$color-surface: $color-bg;
-$color-carousel-placeholder: #b0b0b0;
-$color-cursor-label: #111;
+$color-header-bg: transparent;
+$color-header-logo: #cdcdcd;
+$color-header-text: #cdcdcd;
 
-$color-cursor-glow-strong: rgb(107, 97, 252);
-$color-cursor-glow-soft: rgb(12, 0, 185);
+$color-surface: #ffffff;
+$color-carousel-placeholder: #cdcdcd;
+
+$color-cursor-label: #111111;
+$color-cursor-glow-strong: rgba(70, 0, 255, 1);
+$color-cursor-glow-soft: rgba(70, 0, 255, 0.65);
 
 $meta-text-color: #848484;
 
@@ -42,32 +46,36 @@ $bp-tablet: 48rem;
 $bp-desktop: 64rem;
 $bp-wide: 80rem;
 
-$link-text-color: $color-bg;
-$link-hover-text-color: $color-accent;
-$link-current-text-color: $color-accent;
+/* LINKS */
+
+$link-text-color: #cdcdcd;
+$link-hover-text-color: rgba(70, 0, 255, 1);
+$link-current-text-color: rgba(70, 0, 255, 1);
 
 $link-text-decoration: none;
 $link-hover-text-decoration: none;
 $link-current-text-decoration: none;
 
+/* CSS VARIABLES */
+
 :root {
-  --color-bg: #{$color-dark-bg};
-  --color-text: #{$color-bg};
-  --color-surface: #{$color-bg};
+  --color-bg: #{$color-light-bg};
+  --color-text: #{$color-dark-bg};
+  --color-surface: #{$color-surface};
   --color-muted: #{$meta-text-color};
 
   --color-header-bg: #{$color-header-bg};
-  --color-header-logo: #{$color-bg};
-  --color-header-text: #{$color-bg};
+  --color-header-logo: #{$color-header-logo};
+  --color-header-text: #{$color-header-text};
 
-  --color-link: #{$color-bg};
-  --color-link-hover: #{$color-accent};
-  --color-link-current: #{$color-accent};
+  --color-link: #{$link-text-color};
+  --color-link-hover: #{$link-hover-text-color};
+  --color-link-current: #{$link-current-text-color};
 
   --color-accent: #{$color-accent};
 
-  --theme-toggle-track: #{$color-bg};
-  --theme-toggle-thumb: #{$color-dark-bg};
+  --theme-toggle-track: #{$color-dark-bg};
+  --theme-toggle-thumb: #{$color-light-bg};
 
   --theme-transition: #{$transition-base};
 }
@@ -75,16 +83,16 @@ $link-current-text-decoration: none;
 body.is-light {
   --color-bg: #{$color-light-bg};
   --color-text: #{$color-dark-bg};
-  --color-surface: #{$color-bg};
-  --color-muted: rgba(32, 32, 32, 0.62);
+  --color-surface: #{$color-surface};
+  --color-muted: rgba(0, 0, 0, 0.62);
 
-  --color-header-bg: rgba(217, 217, 217, 0.42);
-  --color-header-logo: #{$color-dark-bg};
-  --color-header-text: #{$color-dark-bg};
+  --color-header-bg: #{$color-header-bg};
+  --color-header-logo: #{$color-header-logo};
+  --color-header-text: #{$color-header-text};
 
-  --color-link: #{$color-dark-bg};
-  --color-link-hover: #{$color-accent};
-  --color-link-current: #{$color-accent};
+  --color-link: #{$link-text-color};
+  --color-link-hover: #{$link-hover-text-color};
+  --color-link-current: #{$link-current-text-color};
 
   --theme-toggle-track: #{$color-dark-bg};
   --theme-toggle-thumb: #{$color-light-bg};

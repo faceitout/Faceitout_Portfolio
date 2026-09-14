@@ -1,0 +1,934 @@
+@use "./variables" as *;
+
+/* 
+  SISTEMA GLOBAL UI
+  - Desktop: header/footer con background #000 + mix-blend-mode exclusion
+  - Desktop links normales: #cdcdcd
+  - Desktop hover/focus: rgba(70, 0, 255, 1)
+  - Móvil: header/footer sólidos blancos, textos negros #111111
+  - Menú móvil abierto: texto negro, current/focus morado
+*/
+
+:root {
+  --site-ui-header-bg: #000;
+  --site-ui-header-color: #cdcdcd;
+  --site-ui-header-hover-color: #{$color-accent};
+  --site-ui-header-current-color: rgba(185, 255, 0, 1);
+
+  --site-ui-footer-bg: #000;
+  --site-ui-footer-color: #cdcdcd;
+  --site-ui-footer-hover-color: #{$color-accent};
+  --site-ui-footer-current-color: #ffffff;
+
+  --site-ui-mobile-bg: #ffffff;
+  --site-ui-mobile-color: #111111;
+  --site-ui-mobile-panel-color: #111111;
+  --site-ui-mobile-hover-color: #{$color-accent};
+  --site-ui-mobile-current-color: #{$color-accent};
+
+  --site-ui-blend-container: exclusion;
+  --site-ui-blend-text: normal;
+}
+
+/* HEADER GLOBAL CON EFECTO EXCLUSION */
+
+.home-header,
+.work-header,
+.gallery-header,
+.about-header,
+.project-header,
+.site-header {
+  background-color: var(--site-ui-header-bg) !important;
+  mix-blend-mode: var(--site-ui-blend-container) !important;
+  isolation: auto !important;
+}
+
+/* HEADER LINKS */
+
+.home-nav__item,
+.work-nav__item,
+.gallery-nav__item,
+.about-nav__item,
+.project-nav__item {
+  color: var(--site-ui-header-color) !important;
+}
+
+.home-nav__link,
+.work-nav__link,
+.gallery-nav__link,
+.about-nav__link,
+.project-nav__link,
+.home-start,
+.work-start,
+.gallery-start,
+.about-start,
+.project-start {
+  color: var(--site-ui-header-color) !important;
+  mix-blend-mode: var(--site-ui-blend-text) !important;
+  text-decoration: none !important;
+  transition: color 0.8s cubic-bezier(0.16, 1, 0.3, 1) !important;
+}
+
+.home-nav__link:hover,
+.home-nav__link:focus,
+.home-nav__link:focus-visible,
+.work-nav__link:hover,
+.work-nav__link:focus,
+.work-nav__link:focus-visible,
+.gallery-nav__link:hover,
+.gallery-nav__link:focus,
+.gallery-nav__link:focus-visible,
+.about-nav__link:hover,
+.about-nav__link:focus,
+.about-nav__link:focus-visible,
+.project-nav__link:hover,
+.project-nav__link:focus,
+.project-nav__link:focus-visible,
+.home-start:hover,
+.home-start:focus,
+.home-start:focus-visible,
+.work-start:hover,
+.work-start:focus,
+.work-start:focus-visible,
+.gallery-start:hover,
+.gallery-start:focus,
+.gallery-start:focus-visible,
+.about-start:hover,
+.about-start:focus,
+.about-start:focus-visible,
+.project-start:hover,
+.project-start:focus,
+.project-start:focus-visible {
+  color: var(--site-ui-header-hover-color) !important;
+  mix-blend-mode: var(--site-ui-blend-text) !important;
+}
+
+.home-nav__link.is-current,
+.home-nav__link[aria-current="page"],
+.work-nav__link.is-current,
+.work-nav__link[aria-current="page"],
+.gallery-nav__link.is-current,
+.gallery-nav__link[aria-current="page"],
+.about-nav__link.is-current,
+.about-nav__link[aria-current="page"],
+.project-nav__link.is-current,
+.project-nav__link[aria-current="page"] {
+  color: var(--site-ui-header-current-color) !important;
+  mix-blend-mode: var(--site-ui-blend-text) !important;
+}
+
+/* HEADER ROLLING TEXT */
+
+.home-nav__link .text-roll__line,
+.work-nav__link .text-roll__line,
+.gallery-nav__link .text-roll__line,
+.about-nav__link .text-roll__line,
+.project-nav__link .text-roll__line,
+.home-start .text-roll__line,
+.work-start .text-roll__line,
+.gallery-start .text-roll__line,
+.about-start .text-roll__line,
+.project-start .text-roll__line {
+  color: currentColor !important;
+  mix-blend-mode: var(--site-ui-blend-text) !important;
+}
+
+.home-nav__link .text-roll__line--default,
+.work-nav__link .text-roll__line--default,
+.gallery-nav__link .text-roll__line--default,
+.about-nav__link .text-roll__line--default,
+.project-nav__link .text-roll__line--default,
+.home-start .text-roll__line--default,
+.work-start .text-roll__line--default,
+.gallery-start .text-roll__line--default,
+.about-start .text-roll__line--default,
+.project-start .text-roll__line--default {
+  color: currentColor !important;
+}
+
+.home-nav__link .text-roll__line--hover,
+.work-nav__link .text-roll__line--hover,
+.gallery-nav__link .text-roll__line--hover,
+.about-nav__link .text-roll__line--hover,
+.project-nav__link .text-roll__line--hover,
+.home-start .text-roll__line--hover,
+.work-start .text-roll__line--hover,
+.gallery-start .text-roll__line--hover,
+.about-start .text-roll__line--hover,
+.project-start .text-roll__line--hover {
+  color: var(--site-ui-header-hover-color) !important;
+}
+
+.home-nav__link.is-current .text-roll__line,
+.home-nav__link[aria-current="page"] .text-roll__line,
+.work-nav__link.is-current .text-roll__line,
+.work-nav__link[aria-current="page"] .text-roll__line,
+.gallery-nav__link.is-current .text-roll__line,
+.gallery-nav__link[aria-current="page"] .text-roll__line,
+.about-nav__link.is-current .text-roll__line,
+.about-nav__link[aria-current="page"] .text-roll__line,
+.project-nav__link.is-current .text-roll__line,
+.project-nav__link[aria-current="page"] .text-roll__line {
+  color: var(--site-ui-header-current-color) !important;
+}
+
+/* FOOTER GLOBAL CON EFECTO EXCLUSION */
+
+.home-footer,
+.work-footer,
+.gallery-footer,
+.about-footer,
+.project-footer,
+.site-footer {
+  background-color: var(--site-ui-footer-bg) !important;
+  mix-blend-mode: var(--site-ui-blend-container) !important;
+  isolation: auto !important;
+}
+
+/* FOOTER TEXTOS */
+
+.home-footer__copyright,
+.home-footer__social,
+.home-footer__credit,
+.home-footer__social-link,
+.home-footer__separator,
+.work-footer__copyright,
+.work-footer__social,
+.work-footer__credit,
+.work-footer__social-link,
+.work-footer__separator,
+.gallery-footer__copyright,
+.gallery-footer__social,
+.gallery-footer__credit,
+.gallery-footer__social-link,
+.gallery-footer__separator,
+.about-footer__copyright,
+.about-footer__social,
+.about-footer__credit,
+.about-footer__social-link,
+.about-footer__separator,
+.project-footer__copyright,
+.project-footer__social,
+.project-footer__credit,
+.project-footer__social-link,
+.project-footer__separator,
+.site-footer,
+.site-footer a,
+.site-footer__col {
+  color: var(--site-ui-footer-color) !important;
+  text-decoration: none !important;
+  mix-blend-mode: var(--site-ui-blend-text) !important;
+  transition: color 0.8s cubic-bezier(0.16, 1, 0.3, 1) !important;
+}
+
+.home-footer__social-link:hover,
+.home-footer__social-link:focus,
+.home-footer__social-link:focus-visible,
+.home-footer__credit:hover,
+.home-footer__credit:focus,
+.home-footer__credit:focus-visible,
+.work-footer__social-link:hover,
+.work-footer__social-link:focus,
+.work-footer__social-link:focus-visible,
+.work-footer__credit:hover,
+.work-footer__credit:focus,
+.work-footer__credit:focus-visible,
+.gallery-footer__social-link:hover,
+.gallery-footer__social-link:focus,
+.gallery-footer__social-link:focus-visible,
+.gallery-footer__credit:hover,
+.gallery-footer__credit:focus,
+.gallery-footer__credit:focus-visible,
+.about-footer__social-link:hover,
+.about-footer__social-link:focus,
+.about-footer__social-link:focus-visible,
+.about-footer__credit:hover,
+.about-footer__credit:focus,
+.about-footer__credit:focus-visible,
+.project-footer__social-link:hover,
+.project-footer__social-link:focus,
+.project-footer__social-link:focus-visible,
+.project-footer__credit:hover,
+.project-footer__credit:focus,
+.project-footer__credit:focus-visible,
+.site-footer a:hover,
+.site-footer a:focus,
+.site-footer a:focus-visible {
+  color: var(--site-ui-footer-hover-color) !important;
+}
+
+.home-footer__social-link.is-current,
+.home-footer__social-link[aria-current="page"],
+.work-footer__social-link.is-current,
+.work-footer__social-link[aria-current="page"],
+.gallery-footer__social-link.is-current,
+.gallery-footer__social-link[aria-current="page"],
+.about-footer__social-link.is-current,
+.about-footer__social-link[aria-current="page"],
+.project-footer__social-link.is-current,
+.project-footer__social-link[aria-current="page"],
+.site-footer a.is-current,
+.site-footer a[aria-current="page"] {
+  color: var(--site-ui-footer-current-color) !important;
+}
+
+/* FOOTER ROLLING TEXT */
+
+.home-footer__social-link .text-roll__line,
+.home-footer__credit .text-roll__line,
+.work-footer__social-link .text-roll__line,
+.work-footer__credit .text-roll__line,
+.gallery-footer__social-link .text-roll__line,
+.gallery-footer__credit .text-roll__line,
+.about-footer__social-link .text-roll__line,
+.about-footer__credit .text-roll__line,
+.project-footer__social-link .text-roll__line,
+.project-footer__credit .text-roll__line {
+  color: currentColor !important;
+  mix-blend-mode: var(--site-ui-blend-text) !important;
+}
+
+.home-footer__social-link .text-roll__line--hover,
+.home-footer__credit .text-roll__line--hover,
+.work-footer__social-link .text-roll__line--hover,
+.work-footer__credit .text-roll__line--hover,
+.gallery-footer__social-link .text-roll__line--hover,
+.gallery-footer__credit .text-roll__line--hover,
+.about-footer__social-link .text-roll__line--hover,
+.about-footer__credit .text-roll__line--hover,
+.project-footer__social-link .text-roll__line--hover,
+.project-footer__credit .text-roll__line--hover {
+  color: var(--site-ui-footer-hover-color) !important;
+}
+
+/* MOBILE MENU BASE */
+
+.home-mobile-menu-word,
+.home-mobile-menu-button,
+.work-mobile-menu-word,
+.work-mobile-menu-button,
+.gallery-mobile-menu-word,
+.gallery-mobile-menu-button,
+.about-mobile-menu-word,
+.about-mobile-menu-button,
+.project-mobile-menu-word,
+.project-mobile-menu-button {
+  color: var(--site-ui-mobile-color) !important;
+  mix-blend-mode: normal !important;
+}
+
+.home-mobile-menu-button__line,
+.work-mobile-menu-button__line,
+.gallery-mobile-menu-button__line,
+.about-mobile-menu-button__line,
+.project-mobile-menu-button__line {
+  background-color: var(--site-ui-mobile-color) !important;
+}
+
+.home-mobile-menu-list__link,
+.home-mobile-menu-social__link,
+.home-mobile-menu-credit,
+.work-mobile-menu-list__link,
+.work-mobile-menu-social__link,
+.work-mobile-menu-credit,
+.gallery-mobile-menu-list__link,
+.gallery-mobile-menu-social__link,
+.gallery-mobile-menu-credit,
+.about-mobile-menu-list__link,
+.about-mobile-menu-social__link,
+.about-mobile-menu-credit,
+.project-mobile-menu-list__link,
+.project-mobile-menu-social__link,
+.project-mobile-menu-credit {
+  color: var(--site-ui-mobile-panel-color) !important;
+}
+
+.home-mobile-menu-list__link:hover,
+.home-mobile-menu-list__link:focus,
+.home-mobile-menu-list__link:focus-visible,
+.home-mobile-menu-list__link.is-current,
+.home-mobile-menu-list__link[aria-current="page"],
+.home-mobile-menu-social__link:hover,
+.home-mobile-menu-social__link:focus,
+.home-mobile-menu-social__link:focus-visible,
+.work-mobile-menu-list__link:hover,
+.work-mobile-menu-list__link:focus,
+.work-mobile-menu-list__link:focus-visible,
+.work-mobile-menu-list__link.is-current,
+.work-mobile-menu-list__link[aria-current="page"],
+.work-mobile-menu-social__link:hover,
+.work-mobile-menu-social__link:focus,
+.work-mobile-menu-social__link:focus-visible,
+.gallery-mobile-menu-list__link:hover,
+.gallery-mobile-menu-list__link:focus,
+.gallery-mobile-menu-list__link:focus-visible,
+.gallery-mobile-menu-list__link.is-current,
+.gallery-mobile-menu-list__link[aria-current="page"],
+.gallery-mobile-menu-social__link:hover,
+.gallery-mobile-menu-social__link:focus,
+.gallery-mobile-menu-social__link:focus-visible,
+.about-mobile-menu-list__link:hover,
+.about-mobile-menu-list__link:focus,
+.about-mobile-menu-list__link:focus-visible,
+.about-mobile-menu-list__link.is-current,
+.about-mobile-menu-list__link[aria-current="page"],
+.about-mobile-menu-social__link:hover,
+.about-mobile-menu-social__link:focus,
+.about-mobile-menu-social__link:focus-visible,
+.project-mobile-menu-list__link:hover,
+.project-mobile-menu-list__link:focus,
+.project-mobile-menu-list__link:focus-visible,
+.project-mobile-menu-list__link.is-current,
+.project-mobile-menu-list__link[aria-current="page"],
+.project-mobile-menu-social__link:hover,
+.project-mobile-menu-social__link:focus,
+.project-mobile-menu-social__link:focus-visible {
+  color: var(--site-ui-mobile-hover-color) !important;
+}
+
+/* LOGO SIN HOVER GLOBAL */
+
+.home-brand__image,
+.work-brand__image,
+.gallery-brand__image,
+.about-brand__image,
+.project-brand__image,
+.site-brand__image {
+  filter: none !important;
+  opacity: 1 !important;
+}
+
+.home-brand:hover .home-brand__image,
+.home-brand:focus .home-brand__image,
+.home-brand:focus-visible .home-brand__image,
+.work-brand:hover .work-brand__image,
+.work-brand:focus .work-brand__image,
+.work-brand:focus-visible .work-brand__image,
+.gallery-brand:hover .gallery-brand__image,
+.gallery-brand:focus .gallery-brand__image,
+.gallery-brand:focus-visible .gallery-brand__image,
+.about-brand:hover .about-brand__image,
+.about-brand:focus .about-brand__image,
+.about-brand:focus-visible .about-brand__image,
+.project-brand:hover .project-brand__image,
+.project-brand:focus .project-brand__image,
+.project-brand:focus-visible .project-brand__image,
+.site-brand:hover .site-brand__image,
+.site-brand:focus .site-brand__image,
+.site-brand:focus-visible .site-brand__image {
+  filter: none !important;
+  opacity: 1 !important;
+}
+
+/* LINKS DE CONTENIDO NORMAL */
+
+.about-detail__meta-value a,
+.project-detail__meta-value a,
+.project-detail__next-link {
+  color: var(--color-text) !important;
+  text-decoration: none !important;
+}
+
+.about-detail__meta-value a:hover,
+.about-detail__meta-value a:focus,
+.about-detail__meta-value a:focus-visible,
+.project-detail__meta-value a:hover,
+.project-detail__meta-value a:focus,
+.project-detail__meta-value a:focus-visible,
+.project-detail__next-link:hover,
+.project-detail__next-link:focus,
+.project-detail__next-link:focus-visible {
+  color: var(--site-ui-header-hover-color) !important;
+}
+
+/* MÓVIL: SÓLIDO, NEGRO DIRECTO, SIN SEGUNDA LÍNEA DEL TEXT-ROLL */
+
+@media (max-width: $bp-tablet), (hover: none), (pointer: coarse) {
+  :root {
+    --site-ui-mobile-bg: #ffffff;
+    --site-ui-mobile-color: #111111;
+    --site-ui-mobile-panel-color: #111111;
+    --site-ui-mobile-hover-color: #{$color-accent};
+    --site-ui-mobile-current-color: #{$color-accent};
+  }
+
+  .home-header,
+  .work-header,
+  .gallery-header,
+  .about-header,
+  .project-header,
+  .site-header,
+  .home-footer,
+  .work-footer,
+  .gallery-footer,
+  .about-footer,
+  .project-footer,
+  .site-footer {
+    background-color: #ffffff !important;
+    mix-blend-mode: normal !important;
+    isolation: isolate !important;
+    filter: none !important;
+  }
+
+  .home-brand,
+  .work-brand,
+  .gallery-brand,
+  .about-brand,
+  .project-brand,
+  .site-brand {
+    pointer-events: auto !important;
+    touch-action: manipulation !important;
+  }
+
+  .home-brand__image,
+  .work-brand__image,
+  .gallery-brand__image,
+  .about-brand__image,
+  .project-brand__image,
+  .site-brand__image {
+    filter: none !important;
+    opacity: 1 !important;
+    mix-blend-mode: normal !important;
+  }
+
+  .home-mobile-menu-panel,
+  .work-mobile-menu-panel,
+  .gallery-mobile-menu-panel,
+  .about-mobile-menu-panel,
+  .project-mobile-menu-panel {
+    background-color: #ffffff !important;
+    color: #111111 !important;
+    mix-blend-mode: normal !important;
+    isolation: isolate !important;
+    filter: none !important;
+  }
+
+  .home-mobile-menu-word,
+  .work-mobile-menu-word,
+  .gallery-mobile-menu-word,
+  .about-mobile-menu-word,
+  .project-mobile-menu-word,
+  .home-mobile-menu-button,
+  .work-mobile-menu-button,
+  .gallery-mobile-menu-button,
+  .about-mobile-menu-button,
+  .project-mobile-menu-button {
+    color: #111111 !important;
+    mix-blend-mode: normal !important;
+    filter: none !important;
+    opacity: 1 !important;
+  }
+
+  .home-mobile-menu-button__line,
+  .work-mobile-menu-button__line,
+  .gallery-mobile-menu-button__line,
+  .about-mobile-menu-button__line,
+  .project-mobile-menu-button__line {
+    background-color: #111111 !important;
+    border-color: #111111 !important;
+    mix-blend-mode: normal !important;
+    filter: none !important;
+    opacity: 1 !important;
+  }
+
+  .home-mobile-menu-list__link,
+  .home-mobile-menu-social__link,
+  .home-mobile-menu-credit,
+  .work-mobile-menu-list__link,
+  .work-mobile-menu-social__link,
+  .work-mobile-menu-credit,
+  .gallery-mobile-menu-list__link,
+  .gallery-mobile-menu-social__link,
+  .gallery-mobile-menu-credit,
+  .about-mobile-menu-list__link,
+  .about-mobile-menu-social__link,
+  .about-mobile-menu-credit,
+  .project-mobile-menu-list__link,
+  .project-mobile-menu-social__link,
+  .project-mobile-menu-credit {
+    color: #111111 !important;
+    mix-blend-mode: normal !important;
+    filter: none !important;
+    opacity: 1 !important;
+  }
+
+  .home-mobile-menu-list__link:hover,
+  .home-mobile-menu-list__link:focus,
+  .home-mobile-menu-list__link:focus-visible,
+  .home-mobile-menu-list__link.is-current,
+  .home-mobile-menu-list__link[aria-current="page"],
+  .home-mobile-menu-social__link:hover,
+  .home-mobile-menu-social__link:focus,
+  .home-mobile-menu-social__link:focus-visible,
+  .work-mobile-menu-list__link:hover,
+  .work-mobile-menu-list__link:focus,
+  .work-mobile-menu-list__link:focus-visible,
+  .work-mobile-menu-list__link.is-current,
+  .work-mobile-menu-list__link[aria-current="page"],
+  .work-mobile-menu-social__link:hover,
+  .work-mobile-menu-social__link:focus,
+  .work-mobile-menu-social__link:focus-visible,
+  .gallery-mobile-menu-list__link:hover,
+  .gallery-mobile-menu-list__link:focus,
+  .gallery-mobile-menu-list__link:focus-visible,
+  .gallery-mobile-menu-list__link.is-current,
+  .gallery-mobile-menu-list__link[aria-current="page"],
+  .gallery-mobile-menu-social__link:hover,
+  .gallery-mobile-menu-social__link:focus,
+  .gallery-mobile-menu-social__link:focus-visible,
+  .about-mobile-menu-list__link:hover,
+  .about-mobile-menu-list__link:focus,
+  .about-mobile-menu-list__link:focus-visible,
+  .about-mobile-menu-list__link.is-current,
+  .about-mobile-menu-list__link[aria-current="page"],
+  .about-mobile-menu-social__link:hover,
+  .about-mobile-menu-social__link:focus,
+  .about-mobile-menu-social__link:focus-visible,
+  .project-mobile-menu-list__link:hover,
+  .project-mobile-menu-list__link:focus,
+  .project-mobile-menu-list__link:focus-visible,
+  .project-mobile-menu-list__link.is-current,
+  .project-mobile-menu-list__link[aria-current="page"],
+  .project-mobile-menu-social__link:hover,
+  .project-mobile-menu-social__link:focus,
+  .project-mobile-menu-social__link:focus-visible {
+    color: #{$color-accent} !important;
+  }
+
+  .home-footer__copyright,
+  .home-footer__social,
+  .home-footer__credit,
+  .home-footer__social-link,
+  .home-footer__separator,
+  .work-footer__copyright,
+  .work-footer__social,
+  .work-footer__credit,
+  .work-footer__social-link,
+  .work-footer__separator,
+  .gallery-footer__copyright,
+  .gallery-footer__social,
+  .gallery-footer__credit,
+  .gallery-footer__social-link,
+  .gallery-footer__separator,
+  .about-footer__copyright,
+  .about-footer__social,
+  .about-footer__credit,
+  .about-footer__social-link,
+  .about-footer__separator,
+  .project-footer__copyright,
+  .project-footer__social,
+  .project-footer__credit,
+  .project-footer__social-link,
+  .project-footer__separator,
+  .site-footer,
+  .site-footer a,
+  .site-footer__col {
+    color: #111111 !important;
+    mix-blend-mode: normal !important;
+    filter: none !important;
+    opacity: 1 !important;
+  }
+
+  .home-footer__social-link:hover,
+  .home-footer__social-link:focus,
+  .home-footer__social-link:focus-visible,
+  .home-footer__credit:hover,
+  .home-footer__credit:focus,
+  .home-footer__credit:focus-visible,
+  .work-footer__social-link:hover,
+  .work-footer__social-link:focus,
+  .work-footer__social-link:focus-visible,
+  .work-footer__credit:hover,
+  .work-footer__credit:focus,
+  .work-footer__credit:focus-visible,
+  .gallery-footer__social-link:hover,
+  .gallery-footer__social-link:focus,
+  .gallery-footer__social-link:focus-visible,
+  .gallery-footer__credit:hover,
+  .gallery-footer__credit:focus,
+  .gallery-footer__credit:focus-visible,
+  .about-footer__social-link:hover,
+  .about-footer__social-link:focus,
+  .about-footer__social-link:focus-visible,
+  .about-footer__credit:hover,
+  .about-footer__credit:focus,
+  .about-footer__credit:focus-visible,
+  .project-footer__social-link:hover,
+  .project-footer__social-link:focus,
+  .project-footer__social-link:focus-visible,
+  .project-footer__credit:hover,
+  .project-footer__credit:focus,
+  .project-footer__credit:focus-visible,
+  .site-footer a:hover,
+  .site-footer a:focus,
+  .site-footer a:focus-visible {
+    color: #{$color-accent} !important;
+  }
+
+  .text-roll {
+    height: auto !important;
+    overflow: visible !important;
+  }
+
+  .text-roll__inner {
+    display: inline !important;
+    transform: none !important;
+    transition: none !important;
+  }
+
+  .text-roll__line {
+    display: inline !important;
+    height: auto !important;
+    line-height: inherit !important;
+    color: currentColor !important;
+    mix-blend-mode: normal !important;
+  }
+
+  .text-roll__line--hover {
+    display: none !important;
+  }
+
+  .home-nav__link .text-roll__line,
+  .work-nav__link .text-roll__line,
+  .gallery-nav__link .text-roll__line,
+  .about-nav__link .text-roll__line,
+  .project-nav__link .text-roll__line,
+  .home-start .text-roll__line,
+  .work-start .text-roll__line,
+  .gallery-start .text-roll__line,
+  .about-start .text-roll__line,
+  .project-start .text-roll__line,
+  .home-footer__social-link .text-roll__line,
+  .home-footer__credit .text-roll__line,
+  .work-footer__social-link .text-roll__line,
+  .work-footer__credit .text-roll__line,
+  .gallery-footer__social-link .text-roll__line,
+  .gallery-footer__credit .text-roll__line,
+  .about-footer__social-link .text-roll__line,
+  .about-footer__credit .text-roll__line,
+  .project-footer__social-link .text-roll__line,
+  .project-footer__credit .text-roll__line {
+    color: currentColor !important;
+    mix-blend-mode: normal !important;
+  }
+}
+
+
+/* MOBILE FOOTERS UNIFICADOS */
+
+@media (max-width: $bp-tablet), (hover: none), (pointer: coarse) {
+  .home-footer,
+  .work-footer,
+  .gallery-footer,
+  .about-footer,
+  .project-footer {
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    align-content: end !important;
+    align-items: start !important;
+    gap: 0 !important;
+    width: 100% !important;
+    min-height: 16rem !important;
+    padding: 1rem 0.875rem 0.875rem !important;
+    border-top: 1.5px solid #{$color-accent} !important;
+    background-color: #ffffff !important;
+    color: #111111 !important;
+    mix-blend-mode: normal !important;
+    isolation: isolate !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+  }
+
+  .home-footer,
+  .work-footer,
+  .about-footer,
+  .project-footer {
+    position: relative !important;
+    left: auto !important;
+    right: auto !important;
+    bottom: auto !important;
+    z-index: 2 !important;
+  }
+
+  .gallery-footer {
+    position: fixed !important;
+    left: 0 !important;
+    right: 0 !important;
+    bottom: 0 !important;
+    z-index: 20 !important;
+  }
+
+  .home-footer__social,
+  .work-footer__social,
+  .gallery-footer__social,
+  .about-footer__social,
+  .project-footer__social {
+    order: 1 !important;
+    justify-self: start !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    justify-content: flex-start !important;
+    gap: 0.14rem !important;
+    margin: 0 0 4.75rem !important;
+    text-align: left !important;
+    white-space: normal !important;
+  }
+
+  .home-footer__separator,
+  .work-footer__separator,
+  .gallery-footer__separator,
+  .about-footer__separator,
+  .project-footer__separator {
+    display: none !important;
+  }
+
+  .home-footer__copyright,
+  .work-footer__copyright,
+  .gallery-footer__copyright,
+  .about-footer__copyright,
+  .project-footer__copyright {
+    order: 2 !important;
+    justify-self: start !important;
+    margin: 0 !important;
+    text-align: left !important;
+    white-space: normal !important;
+  }
+
+  .home-footer__credit,
+  .work-footer__credit,
+  .gallery-footer__credit,
+  .about-footer__credit,
+  .project-footer__credit {
+    order: 3 !important;
+    justify-self: start !important;
+    margin: 0.16rem 0 0 !important;
+    overflow: visible !important;
+    text-align: left !important;
+    white-space: normal !important;
+  }
+
+  .home-footer__copyright,
+  .home-footer__social,
+  .home-footer__credit,
+  .home-footer__social-link,
+  .home-footer__separator,
+  .work-footer__copyright,
+  .work-footer__social,
+  .work-footer__credit,
+  .work-footer__social-link,
+  .work-footer__separator,
+  .gallery-footer__copyright,
+  .gallery-footer__social,
+  .gallery-footer__credit,
+  .gallery-footer__social-link,
+  .gallery-footer__separator,
+  .about-footer__copyright,
+  .about-footer__social,
+  .about-footer__credit,
+  .about-footer__social-link,
+  .about-footer__separator,
+  .project-footer__copyright,
+  .project-footer__social,
+  .project-footer__credit,
+  .project-footer__social-link,
+  .project-footer__separator {
+    font-size: clamp(1rem, 4.2vw, 1.25rem) !important;
+    line-height: 1.08 !important;
+    letter-spacing: -0.055em !important;
+    color: #111111 !important;
+    text-align: left !important;
+    text-transform: uppercase !important;
+    text-decoration: none !important;
+  }
+
+  .home-footer__social-link,
+  .work-footer__social-link,
+  .gallery-footer__social-link,
+  .about-footer__social-link,
+  .project-footer__social-link {
+    display: inline-block !important;
+    overflow: visible !important;
+  }
+}
+
+@media (max-width: 26.25rem) {
+  .home-footer,
+  .work-footer,
+  .gallery-footer,
+  .about-footer,
+  .project-footer {
+    min-height: 16rem !important;
+    padding: 0.875rem 0.75rem 0.75rem !important;
+  }
+
+  .home-footer__social,
+  .work-footer__social,
+  .gallery-footer__social,
+  .about-footer__social,
+  .project-footer__social {
+    gap: 0.12rem !important;
+    margin-bottom: 4.25rem !important;
+  }
+
+  .home-footer__credit,
+  .work-footer__credit,
+  .gallery-footer__credit,
+  .about-footer__credit,
+  .project-footer__credit {
+    margin-top: 0.14rem !important;
+  }
+
+  .home-footer__copyright,
+  .home-footer__social,
+  .home-footer__credit,
+  .home-footer__social-link,
+  .home-footer__separator,
+  .work-footer__copyright,
+  .work-footer__social,
+  .work-footer__credit,
+  .work-footer__social-link,
+  .work-footer__separator,
+  .gallery-footer__copyright,
+  .gallery-footer__social,
+  .gallery-footer__credit,
+  .gallery-footer__social-link,
+  .gallery-footer__separator,
+  .about-footer__copyright,
+  .about-footer__social,
+  .about-footer__credit,
+  .about-footer__social-link,
+  .about-footer__separator,
+  .project-footer__copyright,
+  .project-footer__social,
+  .project-footer__credit,
+  .project-footer__social-link,
+  .project-footer__separator {
+    font-size: clamp(0.75rem, 3.8vw, 0.9rem) !important;
+    line-height: 1.1 !important;
+    letter-spacing: -0.045em !important;
+  }
+}
+
+@media (max-width: 22.5rem) {
+  .home-footer__social,
+  .work-footer__social,
+  .gallery-footer__social,
+  .about-footer__social,
+  .project-footer__social {
+    margin-bottom: 3.75rem !important;
+  }
+}
+
+/* GALLERY: SIN FOOTER SOLO EN MÓVIL */
+
+@media (max-width: $bp-tablet), (hover: none), (pointer: coarse) {
+  body.gallery-page {
+    .gallery-footer {
+      display: none !important;
+      opacity: 0 !important;
+      visibility: hidden !important;
+      pointer-events: none !important;
+    }
+  }
+}

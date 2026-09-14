@@ -3,129 +3,234 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
   <title>Gallery | Portfolio</title>
-  <link rel="stylesheet" href="./assets/css/main.css" />
+
   <link
-  rel="stylesheet"
-   href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,500,0,0&icon_names=close,dark_mode,light_mode,menu"
-/>
-<link rel="stylesheet" href="./assets/css/main.css" />
+    rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,500,0,0&icon_names=arrow_back,arrow_forward,chevron_left,chevron_right,close,dark_mode,light_mode,menu,volume_off,volume_up"
+  />
+
+  <script>
+    (function () {
+      try {
+        if (sessionStorage.getItem("siteRevealAfterTransition") === "true") {
+          document.documentElement.classList.add("is-site-page-revealing");
+        }
+      } catch (error) {}
+    })();
+  </script>
+
+  <link rel="stylesheet" href="./assets/css/main.css" />
 </head>
 
-<body>
-  <div id="smooth-wrapper">
-    <div id="smooth-content">
-      <div class="site-wrapper">
-        <header class="site-header">
-  <div class="site-header__inner">
-    <a href="./home.html" class="site-header__logo" id="siteLogo"></a>
+<body class="gallery-page">
+  <div class="site-wrapper gallery-site">
+    <main class="gallery">
+      <header class="gallery-header" aria-label="Cabecera gallery">
+        <div class="gallery-header__left">
+          <a class="gallery-brand" href="./home.html" aria-label="faceitout home">
+            <img
+              class="gallery-brand__image"
+              id="galleryLogo"
+              src="./assets/images/LOGO.svg"
+              alt="faceitout"
+            />
+          </a>
 
-    <nav class="site-header__nav" aria-label="Navegación principal">
-      <ul class="site-header__menu" id="siteMenu"></ul>
-    </nav>
+          <nav class="gallery-nav" aria-label="Navegación principal gallery">
+            <ul class="gallery-nav__list" id="galleryMenu"></ul>
+          </nav>
+        </div>
 
-    <div class="site-header__time">
-      <button
-        class="theme-toggle site-header__theme-toggle"
-        data-theme-toggle
-        type="button"
-        aria-label="Cambiar a modo claro"
-        aria-pressed="false"
+        <button
+          class="gallery-mobile-menu-word"
+          type="button"
+          data-gallery-mobile-toggle
+          aria-label="Abrir menú"
+          aria-controls="galleryMobileMenuPanel"
+          aria-expanded="false"
+        >
+          GALLERY
+        </button>
+
+        <a
+          class="gallery-start"
+          id="galleryStartProject"
+          href="mailto:almudenaestevez23@gmail.com"
+        >
+          START A PROJECT
+        </a>
+
+        <button
+          class="gallery-mobile-menu-button"
+          id="galleryMobileMenuToggle"
+          type="button"
+          data-gallery-mobile-toggle
+          aria-label="Abrir menú"
+          aria-controls="galleryMobileMenuPanel"
+          aria-expanded="false"
+        >
+          <span class="gallery-mobile-menu-button__line"></span>
+          <span class="gallery-mobile-menu-button__line"></span>
+        </button>
+      </header>
+
+      <div
+        class="gallery-mobile-menu-panel"
+        id="galleryMobileMenuPanel"
+        aria-hidden="true"
       >
-        <span
-          class="material-symbols-rounded theme-toggle__icon theme-toggle__icon--dark"
-          aria-hidden="true"
-        >
-          dark_mode
-        </span>
+        <nav class="gallery-mobile-menu-nav" aria-label="Menú móvil gallery">
+          <ul class="gallery-mobile-menu-list" id="galleryMobileMenu"></ul>
+        </nav>
 
-        <span class="theme-toggle__track" aria-hidden="true">
-          <span class="theme-toggle__thumb"></span>
-        </span>
+        <nav
+          class="gallery-mobile-menu-social"
+          aria-label="Redes sociales móvil"
+          id="galleryMobileSocial"
+        ></nav>
 
-        <span
-          class="material-symbols-rounded theme-toggle__icon theme-toggle__icon--light"
-          aria-hidden="true"
-        >
-          light_mode
-        </span>
-      </button>
-
-      <span id="clock">11:25:54 a.m.</span>
-
-      <button
-        class="menu-toggle"
-        id="menuToggle"
-        type="button"
-        aria-label="Abrir menú"
-        aria-controls="mobileMenuPanel"
-        aria-expanded="false"
-      >
-        <span
-          class="material-symbols-rounded menu-toggle__icon menu-toggle__icon--open"
-          aria-hidden="true"
-        >
-          menu
-        </span>
-
-        <span
-          class="material-symbols-rounded menu-toggle__icon menu-toggle__icon--close"
-          aria-hidden="true"
-        >
-          close
-        </span>
-      </button>
-    </div>
-  </div>
-
-  <div class="mobile-menu" id="mobileMenuPanel" aria-hidden="true">
-    <div class="mobile-menu__top">
-      <button
-        class="theme-toggle theme-toggle--mobile"
-        data-theme-toggle
-        type="button"
-        aria-label="Cambiar a modo claro"
-        aria-pressed="false"
-      >
-        <span
-          class="material-symbols-rounded theme-toggle__icon theme-toggle__icon--dark"
-          aria-hidden="true"
-        >
-          dark_mode
-        </span>
-
-        <span class="theme-toggle__track" aria-hidden="true">
-          <span class="theme-toggle__thumb"></span>
-        </span>
-
-        <span
-          class="material-symbols-rounded theme-toggle__icon theme-toggle__icon--light"
-          aria-hidden="true"
-        >
-          light_mode
-        </span>
-      </button>
-    </div>
-
-    <nav class="mobile-menu__nav" aria-label="Navegación móvil">
-      <ul class="mobile-menu__list" id="mobileMenu"></ul>
-    </nav>
-  </div>
-</header>
-
-        <main class="gallery-page">
-          <section class="gallery-grid" id="galleryGrid"></section>
-        </main>
-
-        <footer class="site-footer">
-          <div class="site-footer__inner">
-            <div class="site-footer__col site-footer__col--copyright" id="footerCopyright"></div>
-            <div class="site-footer__col site-footer__col--social" id="footerSocial"></div>
-            <div class="site-footer__col site-footer__col--contact" id="footerContact"></div>
-          </div>
-        </footer>
+        <p class="gallery-mobile-menu-credit" id="galleryMobileCredit"></p>
       </div>
-    </div>
+
+      <section
+        class="gallery-infinite"
+        id="galleryInfinite"
+        aria-label="Galería draggable"
+      >
+        <div
+          class="gallery-infinite__viewport"
+          id="galleryInfiniteViewport"
+          aria-label="Arrastra para explorar la galería"
+        >
+          <div
+            class="gallery-infinite__world"
+            id="galleryInfiniteWorld"
+            aria-live="polite"
+          ></div>
+        </div>
+      </section>
+
+      <div
+        class="gallery-detail"
+        id="galleryDetail"
+        aria-hidden="true"
+      >
+        <div
+          class="gallery-detail__backdrop"
+          data-gallery-detail-close
+        ></div>
+
+        <section
+          class="gallery-detail__dialog"
+          role="dialog"
+          aria-modal="true"
+          aria-label="Detalle de galería"
+        >
+          <button
+            class="gallery-detail__audio-toggle"
+            id="galleryDetailAudioToggle"
+            type="button"
+            aria-label="Quitar sonido"
+            aria-pressed="true"
+            hidden
+          >
+            <span class="material-symbols-rounded" aria-hidden="true">volume_up</span>
+          </button>
+
+          <button
+            class="gallery-detail__close"
+            id="galleryDetailClose"
+            type="button"
+            aria-label="Cerrar detalle"
+          >
+            <span class="material-symbols-rounded" aria-hidden="true">close</span>
+          </button>
+
+          <div class="gallery-detail__main">
+            <div class="gallery-detail__content">
+              <div class="gallery-detail__media-shell">
+                <button
+                  class="gallery-detail__project-nav gallery-detail__project-nav--prev"
+                  id="galleryDetailPrevProject"
+                  type="button"
+                  aria-label="Proyecto anterior"
+                >
+                  <span class="material-symbols-rounded" aria-hidden="true">arrow_back</span>
+                </button>
+
+                <button
+                  class="gallery-detail__slide-step gallery-detail__slide-step--prev"
+                  id="galleryDetailPrevSlide"
+                  type="button"
+                  aria-label="Imagen anterior del proyecto"
+                  hidden
+                >
+                  <span class="material-symbols-rounded" aria-hidden="true">chevron_left</span>
+                </button>
+
+                <div class="gallery-detail__media-viewport">
+                  <div
+                    class="gallery-detail__media-track"
+                    id="galleryDetailMediaTrack"
+                  ></div>
+                </div>
+
+                <button
+                  class="gallery-detail__slide-step gallery-detail__slide-step--next"
+                  id="galleryDetailNextSlide"
+                  type="button"
+                  aria-label="Imagen siguiente del proyecto"
+                  hidden
+                >
+                  <span class="material-symbols-rounded" aria-hidden="true">chevron_right</span>
+                </button>
+
+                <button
+                  class="gallery-detail__project-nav gallery-detail__project-nav--next"
+                  id="galleryDetailNextProject"
+                  type="button"
+                  aria-label="Siguiente proyecto"
+                >
+                  <span class="material-symbols-rounded" aria-hidden="true">arrow_forward</span>
+                </button>
+              </div>
+
+              <div
+                class="gallery-detail__dots"
+                id="galleryDetailDots"
+                aria-label="Navegación de imágenes del proyecto"
+              ></div>
+
+              <div
+                class="gallery-detail__info"
+                id="galleryDetailInfo"
+                hidden
+              ></div>
+
+              <p
+                class="gallery-detail__description"
+                id="galleryDetailDescription"
+                hidden
+              ></p>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <footer class="gallery-footer" aria-label="Footer gallery">
+        <p class="gallery-footer__copyright" id="galleryCopyright"></p>
+
+        <nav
+          class="gallery-footer__social"
+          aria-label="Redes sociales gallery"
+          id="gallerySocial"
+        ></nav>
+
+        <p class="gallery-footer__credit" id="galleryCredit"></p>
+      </footer>
+    </main>
   </div>
 
   <div class="custom-cursor" id="customCursor">
@@ -133,9 +238,9 @@
   </div>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.3/gsap.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.3/ScrollTrigger.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/ScrollSmoother.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.3/Draggable.min.js"></script>
   <script src="./web/main.js" defer></script>
+  <script src="./web/site-motion.js" defer></script>
   <script src="./web/gallery.js" defer></script>
 </body>
 </html>

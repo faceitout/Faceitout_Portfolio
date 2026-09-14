@@ -3,128 +3,100 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Project 03 | Portfolio</title>
-  <link rel="stylesheet" href="./assets/css/main.css" />
+
+  <title>Project 02 | Portfolio</title>
+
   <link
-  rel="stylesheet"
-   href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,500,0,0&icon_names=close,dark_mode,light_mode,menu"
-/>
-<link rel="stylesheet" href="./assets/css/main.css" />
+    rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,500,0,0&icon_names=close,dark_mode,light_mode,menu"
+  />
+  <link rel="stylesheet" href="./assets/css/main.css" />
 </head>
 
-<body data-project="project03">
-  <div id="smooth-wrapper">
-    <div id="smooth-content">
-      <div class="site-wrapper">
-        <header class="site-header">
-  <div class="site-header__inner">
-    <a href="./home.html" class="site-header__logo" id="siteLogo"></a>
+<body class="project-page-body" data-project="project03">
+  <div class="site-wrapper project-site">
+    <main class="project">
+      <header class="project-header" aria-label="Cabecera proyecto">
+        <div class="project-header__left">
+          <a class="project-brand" href="./home.html" aria-label="faceitout home">
+            <img
+              class="project-brand__image"
+              id="projectLogo"
+              src="./assets/images/LOGO.svg"
+              alt="faceitout"
+            />
+          </a>
 
-    <nav class="site-header__nav" aria-label="Navegación principal">
-      <ul class="site-header__menu" id="siteMenu"></ul>
-    </nav>
+          <nav class="project-nav" aria-label="Navegación principal proyecto">
+            <ul class="project-nav__list" id="projectMenu"></ul>
+          </nav>
+        </div>
 
-    <div class="site-header__time">
-      <button
-        class="theme-toggle site-header__theme-toggle"
-        data-theme-toggle
-        type="button"
-        aria-label="Cambiar a modo claro"
-        aria-pressed="false"
+        <button
+          class="project-mobile-menu-word"
+          type="button"
+          data-project-mobile-toggle
+          aria-label="Abrir menú"
+          aria-controls="projectMobileMenuPanel"
+          aria-expanded="false"
+        >
+          WORKS
+        </button>
+
+        <a
+          class="project-start"
+          id="projectStartProject"
+          href="mailto:almudenaestevez23@gmail.com"
+        >
+          START A PROJECT
+        </a>
+
+        <button
+          class="project-mobile-menu-button"
+          id="projectMobileMenuToggle"
+          type="button"
+          data-project-mobile-toggle
+          aria-label="Abrir menú"
+          aria-controls="projectMobileMenuPanel"
+          aria-expanded="false"
+        >
+          <span class="project-mobile-menu-button__line"></span>
+          <span class="project-mobile-menu-button__line"></span>
+        </button>
+      </header>
+
+      <div
+        class="project-mobile-menu-panel"
+        id="projectMobileMenuPanel"
+        aria-hidden="true"
       >
-        <span
-          class="material-symbols-rounded theme-toggle__icon theme-toggle__icon--dark"
-          aria-hidden="true"
-        >
-          dark_mode
-        </span>
+        <nav class="project-mobile-menu-nav" aria-label="Menú móvil proyecto">
+          <ul class="project-mobile-menu-list" id="projectMobileMenu"></ul>
+        </nav>
 
-        <span class="theme-toggle__track" aria-hidden="true">
-          <span class="theme-toggle__thumb"></span>
-        </span>
+        <nav
+          class="project-mobile-menu-social"
+          aria-label="Redes sociales móvil"
+          id="projectMobileSocial"
+        ></nav>
 
-        <span
-          class="material-symbols-rounded theme-toggle__icon theme-toggle__icon--light"
-          aria-hidden="true"
-        >
-          light_mode
-        </span>
-      </button>
-
-      <span id="clock">11:25:54 a.m.</span>
-
-      <button
-        class="menu-toggle"
-        id="menuToggle"
-        type="button"
-        aria-label="Abrir menú"
-        aria-controls="mobileMenuPanel"
-        aria-expanded="false"
-      >
-        <span
-          class="material-symbols-rounded menu-toggle__icon menu-toggle__icon--open"
-          aria-hidden="true"
-        >
-          menu
-        </span>
-
-        <span
-          class="material-symbols-rounded menu-toggle__icon menu-toggle__icon--close"
-          aria-hidden="true"
-        >
-          close
-        </span>
-      </button>
-    </div>
-  </div>
-
-  <div class="mobile-menu" id="mobileMenuPanel" aria-hidden="true">
-    <div class="mobile-menu__top">
-      <button
-        class="theme-toggle theme-toggle--mobile"
-        data-theme-toggle
-        type="button"
-        aria-label="Cambiar a modo claro"
-        aria-pressed="false"
-      >
-        <span
-          class="material-symbols-rounded theme-toggle__icon theme-toggle__icon--dark"
-          aria-hidden="true"
-        >
-          dark_mode
-        </span>
-
-        <span class="theme-toggle__track" aria-hidden="true">
-          <span class="theme-toggle__thumb"></span>
-        </span>
-
-        <span
-          class="material-symbols-rounded theme-toggle__icon theme-toggle__icon--light"
-          aria-hidden="true"
-        >
-          light_mode
-        </span>
-      </button>
-    </div>
-
-    <nav class="mobile-menu__nav" aria-label="Navegación móvil">
-      <ul class="mobile-menu__list" id="mobileMenu"></ul>
-    </nav>
-  </div>
-</header>
-        <main class="project-page">
-          <section class="project-detail" id="projectDetail"></section>
-        </main>
-
-        <footer class="site-footer">
-          <div class="site-footer__inner">
-            <div class="site-footer__col site-footer__col--copyright" id="footerCopyright"></div>
-            <div class="site-footer__col site-footer__col--social" id="footerSocial"></div>
-            <div class="site-footer__col site-footer__col--contact" id="footerContact"></div>
-          </div>
-        </footer>
+        <p class="project-mobile-menu-credit" id="projectMobileCredit"></p>
       </div>
-    </div>
+
+      <section class="project-page" id="projectDetail" aria-label="Detalle del proyecto"></section>
+
+      <footer class="project-footer" aria-label="Footer proyecto">
+        <p class="project-footer__copyright" id="projectCopyright"></p>
+
+        <nav
+          class="project-footer__social"
+          aria-label="Redes sociales proyecto"
+          id="projectSocial"
+        ></nav>
+
+        <p class="project-footer__credit" id="projectCredit"></p>
+      </footer>
+    </main>
   </div>
 
   <div class="custom-cursor" id="customCursor">
@@ -132,10 +104,10 @@
   </div>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.3/gsap.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.3/ScrollTrigger.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/Draggable.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/ScrollSmoother.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.3/Draggable.min.js"></script>
   <script src="./web/main.js" defer></script>
+  <script src="./web/site-motion.js" defer></script>
   <script src="./web/projects.js" defer></script>
+  
 </body>
 </html>

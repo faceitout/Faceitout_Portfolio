@@ -11,6 +11,27 @@ html {
   background-color: var(--color-bg);
 }
 
+/* OCULTAR SCROLLBAR GLOBAL */
+
+html,
+body {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+html::-webkit-scrollbar,
+body::-webkit-scrollbar,
+*::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+  display: none;
+}
+
+* {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
 html.lenis,
 html.lenis body {
   height: auto;
@@ -50,6 +71,11 @@ body {
 
 main,
 .home,
+.work,
+.gallery,
+.about,
+.project,
+.home-page,
 .work-page,
 .gallery-page,
 .about-page,
@@ -88,6 +114,62 @@ ol {
   list-style: none;
 }
 
+/* ROLLING TEXT GLOBAL */
+
+.text-roll {
+  position: relative;
+  display: inline-block;
+  height: 1em;
+  overflow: hidden;
+  line-height: inherit;
+  vertical-align: top;
+}
+
+.text-roll__inner {
+  display: flex;
+  flex-direction: column;
+  transform: translateY(0);
+  transition: transform 0.42s cubic-bezier(0.76, 0, 0.24, 1);
+  will-change: transform;
+}
+
+.text-roll__line {
+  display: block;
+  height: 1em;
+  line-height: inherit;
+  white-space: nowrap;
+  transition: color var(--theme-transition);
+}
+
+.text-roll__line--default {
+  color: currentColor;
+}
+
+.text-roll__line--hover {
+  color: $color-dark-bg;
+}
+
+a:hover .text-roll__inner,
+a:focus-visible .text-roll__inner,
+button:hover .text-roll__inner,
+button:focus-visible .text-roll__inner,
+[role="button"]:hover .text-roll__inner,
+[role="button"]:focus-visible .text-roll__inner,
+.home-footer__credit:hover .text-roll__inner,
+.home-footer__credit:focus-visible .text-roll__inner,
+.work-footer__credit:hover .text-roll__inner,
+.work-footer__credit:focus-visible .text-roll__inner,
+.gallery-footer__credit:hover .text-roll__inner,
+.gallery-footer__credit:focus-visible .text-roll__inner,
+.about-footer__credit:hover .text-roll__inner,
+.about-footer__credit:focus-visible .text-roll__inner,
+.project-footer__credit:hover .text-roll__inner,
+.project-footer__credit:focus-visible .text-roll__inner {
+  transform: translateY(-50%);
+}
+
+/* CURSOR GLOBAL */
+
 html,
 body,
 body * {
@@ -107,11 +189,20 @@ body * {
   overflow: hidden;
   border-radius: 0;
   background: $color-accent;
+  opacity: 0;
   pointer-events: none;
-  transform: translate(-50%, -50%);
-  will-change: transform, width, height, background-color;
+  transform: translate3d(-50%, -50%, 0);
+  will-change: transform, width, height, background-color, opacity, box-shadow;
+  transition:
+    width 0.22s ease,
+    height 0.22s ease,
+    border-radius 0.22s ease,
+    background-color var(--theme-transition),
+    box-shadow 0.22s ease,
+    opacity 0.2s ease;
 
   &__label {
+    display: none;
     opacity: 0;
     font-family: $font-primary;
     font-size: 0.8125rem;
@@ -119,7 +210,11 @@ body * {
     line-height: 1;
     color: $color-cursor-label;
     white-space: nowrap;
-    transition: opacity 0.2s ease;
+    text-transform: uppercase;
+  }
+
+  &.is-visible {
+    opacity: 1;
   }
 
   &.is-hover {
@@ -127,18 +222,6 @@ body * {
     height: 1.125rem;
     border-radius: 50%;
     box-shadow: 0 0 1.75rem $color-cursor-glow-strong;
-  }
-
-  &.is-view {
-    width: 3.125rem;
-    height: 1.875rem;
-    border-radius: 0;
-    background: $color-accent;
-    box-shadow: 0 0 1.125rem $color-cursor-glow-soft;
-
-    .custom-cursor__label {
-      opacity: 1;
-    }
   }
 }
 
@@ -153,6 +236,8 @@ body * {
     display: none !important;
   }
 }
+
+/* PAGE TRANSITION */
 
 .page-transition-overlay {
   position: fixed;

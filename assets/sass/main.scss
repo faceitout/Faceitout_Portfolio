@@ -1,12 +1,12 @@
 @use "./partials/fonts";
 @use "./partials/variables";
 @use "./partials/base";
+
 @use "./partials/home";
-@use "./partials/header";
 @use "./partials/work";
-@use "./partials/_projects";
-@use "./partials/footer";
-@use "./partials/gallery";
+@use "./partials/projects";
 @use "./partials/about";
+@use "./partials/gallery";
 
-
+@use "./partials/site-motion";
+@use "./partials/site-ui";

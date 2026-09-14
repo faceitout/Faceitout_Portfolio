@@ -5,118 +5,645 @@
   },
   "menu": [
     {
-      "label": "Work",
+      "label": "WORKS",
       "href": "./work.html"
     },
     {
-      "label": "Gallery",
+      "label": "GALLERY",
       "href": "./gallery.html",
       "current": true
     },
     {
-      "label": "About",
+      "label": "ABOUT",
       "href": "./about.html"
     }
   ],
-    "gallery": [
-          {
-      "title": "Logo animado faceitout - Blender",
+  "startProject": {
+    "label": "START A PROJECT",
+    "hoverLabel": "GET IN TOUCH",
+    "href": "mailto:almudenaestevez23@gmail.com?subject=Start%20a%20project"
+  },
+  "gallery": [
+    {
+      "title": "PATRÓN REALIZADO CON ACUARELA",
+      "image": "./assets/images/gallery/acuarela/01.png",
+      "alt": "PATRÓN - ACUARELA - 2024",
+      "detailMedia": [
+        {
+          "type": "image",
+          "src": "./assets/images/gallery/acuarela/01.png",
+          "alt": "Acuarela 01"
+        },
+        {
+          "type": "image",
+          "src": "./assets/images/gallery/acuarela/02.png",
+          "alt": "Acuarela 02"
+        },
+        {
+          "type": "image",
+          "src": "./assets/images/gallery/acuarela/03.png",
+          "alt": "Acuarela 03"
+        }
+      ]
+    },
+    {
+      "title": "PORTADA VINILO - BEATLES - 2024",
+      "image": "./assets/images/gallery/beatles/02.png",
+      "alt": "Beatles",
+      "detailMedia": [
+        {
+          "type": "image",
+          "src": "./assets/images/gallery/beatles/02.png",
+          "alt": "Beatles 02"
+        },
+        {
+          "type": "image",
+          "src": "./assets/images/gallery/beatles/01.png",
+          "alt": "Beatles 01"
+        }
+      ]
+    },
+    {
+      "title": "FOLLETO - JARDÍN BOTÁNICO - 2025",
+      "image": "./assets/images/gallery/botanico/02.png",
+      "alt": "Botánico",
+      "detailMedia": [
+        {
+          "type": "image",
+          "src": "./assets/images/gallery/botanico/02.png",
+          "alt": "Botánico 02"
+        },
+        {
+          "type": "image",
+          "src": "./assets/images/gallery/botanico/01.png",
+          "alt": "Botánico 01"
+        },
+        {
+          "type": "image",
+          "src": "./assets/images/gallery/botanico/03.png",
+          "alt": "Botánico 03"
+        },
+        {
+          "type": "image",
+          "src": "./assets/images/gallery/botanico/04.png",
+          "alt": "Botánico 04"
+        }
+      ]
+    },
+    {
+      "title": "CARTEL - ÓPERA CARMEN - 2026",
+      "image": "./assets/images/gallery/carmen/02.jpg",
+      "alt": "Carmen",
+      "detailMedia": [
+                {
+          "type": "image",
+          "src": "./assets/images/gallery/carmen/02.jpg",
+          "alt": "Carmen 02"
+        },
+        {
+          "type": "image",
+          "src": "./assets/images/gallery/carmen/01.jpg",
+          "alt": "Carmen 01"
+        }
+      ]
+    },
+    {
+      "title": "POSTER - MAQUETACIÓN EXPERIMENTAL - 2024",
+      "image": "./assets/images/gallery/cartel/01.png",
+      "alt": "Cartel",
+      "detailMedia": [
+        {
+          "type": "image",
+          "src": "./assets/images/gallery/cartel/01.png",
+          "alt": "Cartel 01"
+        },
+        {
+          "type": "image",
+          "src": "./assets/images/gallery/cartel/02.png",
+          "alt": "Cartel 02"
+        },
+        {
+          "type": "image",
+          "src": "./assets/images/gallery/cartel/03.png",
+          "alt": "Cartel 03"
+        },
+        {
+          "type": "image",
+          "src": "./assets/images/gallery/cartel/04.png",
+          "alt": "Cartel 04"
+        },
+        {
+          "type": "image",
+          "src": "./assets/images/gallery/cartel/05.png",
+          "alt": "Cartel 05"
+        }
+      ]
+    },
+    {
+      "title": "DISEÑO DE PACKAGING - CATALALATA - 2025",
+      "image": "./assets/images/gallery/catalalata/03.png",
+      "alt": "Catalalata",
+      "detailMedia": [
+        {
+          "type": "image",
+          "src": "./assets/images/gallery/catalalata/03.png",
+          "alt": "Catalalata 03"
+        },
+        {
+          "type": "image",
+          "src": "./assets/images/gallery/catalalata/01.png",
+          "alt": "Catalalata 01"
+        },
+        {
+          "type": "image",
+          "src": "./assets/images/gallery/catalalata/02.png",
+          "alt": "Catalalata 02"
+        },
+        {
+          "type": "image",
+          "src": "./assets/images/gallery/catalalata/04.png",
+          "alt": "Catalalata 04"
+        }
+      ]
+    },
+    {
+      "title": "CIANOTIPIAS - POST MALONE - 2025",
+      "image": "./assets/images/gallery/cianotipias/01.png",
+      "alt": "Cianotipias",
+      "detailMedia": [
+        {
+          "type": "image",
+          "src": "./assets/images/gallery/cianotipias/01.png",
+          "alt": "Cianotipias 01"
+        },
+        {
+          "type": "image",
+          "src": "./assets/images/gallery/cianotipias/02.png",
+          "alt": "Cianotipias 02"
+        }
+      ]
+    },
+    {
+      "title": "COLLAGE ANIMADO - RUSOWSKY - 2025",
       "type": "video",
-      "video": "./assets/images/Folleto.mp4",
-      "alt": "Teatros del Canal imagen 02",
-      "layout": "tall"
+      "video": "./assets/images/gallery/collageanimado/01.mp4",
+      "alt": "Collage animación",
+      "detailMedia": [
+        {
+          "type": "video",
+          "src": "./assets/images/gallery/collageanimado/01.mp4",
+          "alt": "Collage animación 01"
+        },
+        {
+          "type": "video",
+          "src": "./assets/images/gallery/collageanimado/02.mp4",
+          "alt": "Collage animación 02"
+        }
+      ]
     },
     {
-      "title": "Cartel para la opera carmen - comunidad de madrid",
-      "image": "./assets/images/Cartel_04.jpg",
-      "alt": "Teatros del Canal imagen 04",
-      "layout": "tall"
+      "title": "GRAFITO - PORTADA C.TANGANA - 2024",
+      "image": "./assets/images/gallery/ctangana/03.png",
+      "alt": "C. Tangana",
+      "detailMedia": [
+                {
+          "type": "image",
+          "src": "./assets/images/gallery/ctangana/03.png",
+          "alt": "C. Tangana 03"
+        },
+        {
+          "type": "image",
+          "src": "./assets/images/gallery/ctangana/02.png",
+          "alt": "C. Tangana 02"
+        },
+                {
+          "type": "image",
+          "src": "./assets/images/gallery/ctangana/01.png",
+          "alt": "C. Tangana 01"
+        }
+
+      ]
     },
     {
-      "title": "visuales para la Madrid fashion week 2025, Soundreactive - Touchdesigner",
+      "title": "MAQUETACIÓN EXPERIMENTAL - 2025",
+      "image": "./assets/images/gallery/elordendeltiempo/03.png",
+      "alt": "El orden del tiempo",
+      "detailMedia": [
+                {
+          "type": "image",
+          "src": "./assets/images/gallery/elordendeltiempo/03.png",
+          "alt": "El orden del tiempo 03"
+        },
+        {
+          "type": "image",
+          "src": "./assets/images/gallery/elordendeltiempo/02.png",
+          "alt": "El orden del tiempo 02"
+        },
+                {
+          "type": "image",
+          "src": "./assets/images/gallery/elordendeltiempo/01.jpg",
+          "alt": "El orden del tiempo 01"
+        }
+
+      ]
+    },
+    {
+      "title": "FANZINE - POSTER - BBYROMEO - 2025",
+      "image": "./assets/images/gallery/fanzine/01.png",
+      "alt": "Fanzine",
+      "detailMedia": [
+        {
+          "type": "image",
+          "src": "./assets/images/gallery/fanzine/01.png",
+          "alt": "Fanzine 01"
+        },
+        {
+          "type": "image",
+          "src": "./assets/images/gallery/fanzine/02.png",
+          "alt": "Fanzine 02"
+        },
+        {
+          "type": "image",
+          "src": "./assets/images/gallery/fanzine/03.png",
+          "alt": "Fanzine 03"
+        },
+        {
+          "type": "image",
+          "src": "./assets/images/gallery/fanzine/04.png",
+          "alt": "Fanzine 04"
+        }
+      ]
+    },
+    {
+      "title": "FOTOGRAFÍA EXPERIMENTAL - 2024",
+      "image": "./assets/images/gallery/foto/01.png",
+      "alt": "Foto",
+      "detailMedia": [
+        {
+          "type": "image",
+          "src": "./assets/images/gallery/foto/01.png",
+          "alt": "Foto 01"
+        },
+        {
+          "type": "image",
+          "src": "./assets/images/gallery/foto/02.png",
+          "alt": "Foto 02"
+        },
+        {
+          "type": "image",
+          "src": "./assets/images/gallery/foto/03.png",
+          "alt": "Foto 03"
+        }
+      ]
+    },
+    {
+      "title": "FANZINE - INSTANTE - 2025",
+      "image": "./assets/images/gallery/instante/04.png",
+      "alt": "Instante",
+      "detailMedia": [
+                {
+          "type": "image",
+          "src": "./assets/images/gallery/instante/04.png",
+          "alt": "Instante 04"
+        },
+                {
+          "type": "image",
+          "src": "./assets/images/gallery/instante/03.png",
+          "alt": "Instante 03"
+        },
+                {
+          "type": "image",
+          "src": "./assets/images/gallery/instante/02.png",
+          "alt": "Instante 02"
+        },
+        {
+          "type": "image",
+          "src": "./assets/images/gallery/instante/01.png",
+          "alt": "Instante 01"
+        }
+      ]
+    },
+    {
+      "title": "CARTEL SELECCIONADO ESD - 2025",
+      "image": "./assets/images/gallery/jornadas/01.jpg",
+      "alt": "Jornadas",
+      "detailMedia": [
+        {
+          "type": "image",
+          "src": "./assets/images/gallery/jornadas/01.jpg",
+          "alt": "Jornadas 01"
+        },
+        {
+          "type": "image",
+          "src": "./assets/images/gallery/jornadas/02.jpg",
+          "alt": "Jornadas 02"
+        }
+      ]
+    },
+    {
+  "title": "COMO SI NADA - VIDEOJUEGO - 2026",
+  "linkLabel": "JUGAR AQUÍ",
+  "linkHref": "https://faceitout.github.io/Como-si-nada/",
+  "image": "./assets/images/gallery/juego/01.jpg",
+  "alt": "Juego",
+  "detailMedia": [
+    {
+      "type": "image",
+      "src": "./assets/images/gallery/juego/01.jpg",
+      "alt": "Juego 01"
+    },
+    {
+      "type": "image",
+      "src": "./assets/images/gallery/juego/02.jpg",
+      "alt": "Juego 02"
+    },
+    {
+      "type": "image",
+      "src": "./assets/images/gallery/juego/03.jpg",
+      "alt": "Juego 03"
+    }
+  ]
+},
+    {
+      "title": "EDICIÓN EXPERIMENTAL - 2023",
+      "image": "./assets/images/gallery/ks/01.png",
+      "alt": "KS",
+      "detailMedia": [
+        {
+          "type": "image",
+          "src": "./assets/images/gallery/ks/01.png",
+          "alt": "KS 01"
+        },
+        {
+          "type": "image",
+          "src": "./assets/images/gallery/ks/02.png",
+          "alt": "KS 02"
+        },
+        {
+          "type": "image",
+          "src": "./assets/images/gallery/ks/03.png",
+          "alt": "KS 03"
+        },
+                {
+          "type": "image",
+          "src": "./assets/images/gallery/ks/04.png",
+          "alt": "KS 04"
+        }
+      ]
+    },
+    {
+      "title": "3D LOGO - BLENDER - 2024",
       "type": "video",
-      "video": "./assets/images/Insta_post2.mp4",
-      "alt": "Teatros del Canal imagen 02",
-      "layout": "tall"
+      "video": "./assets/images/gallery/logo3d/01.mp4",
+      "alt": "Logo 3D",
+      "detailMedia": [
+        {
+          "type": "video",
+          "src": "./assets/images/gallery/logo3d/01.mp4",
+          "poster": "./assets/images/Cartel_03.png",
+          "alt": "Logo 3D 01"
+        }
+      ]
     },
     {
-      "title": "Rusowsky poster",
-      "image": "./assets/images/Cartel_03.png",
-      "alt": "Teatros del Canal imagen 01",
-      "layout": "tall"
+      "title": "CARTEL - LUISA FERNANDA - 2024",
+      "image": "./assets/images/gallery/luisafernanda/01.jpeg",
+      "alt": "Luisa Fernanda",
+      "detailMedia": [
+        {
+          "type": "image",
+          "src": "./assets/images/gallery/luisafernanda/01.jpeg",
+          "alt": "Luisa Fernanda 01"
+        },
+        {
+          "type": "image",
+          "src": "./assets/images/gallery/luisafernanda/02.jpeg",
+          "alt": "Luisa Fernanda 02"
+        },
+        {
+          "type": "image",
+          "src": "./assets/images/gallery/luisafernanda/03.jpeg",
+          "alt": "Luisa Fernanda 03"
+        }
+      ]
     },
     {
-      "title": "Videoclip experimental Motion",
+      "title": "CARTEL - MANIPULACIÓN - MICHAEL BIERUT - 2023",
+      "image": "./assets/images/gallery/manipulacion/01.png",
+      "alt": "Manipulación",
+      "detailMedia": [
+        {
+          "type": "image",
+          "src": "./assets/images/gallery/manipulacion/01.png",
+          "alt": "Manipulación 01"
+        }
+      ]
+    },
+    {
+      "title": "MDAYS - DIRRECIÓN DE ARTE - 2026",
+      "image": "./assets/images/gallery/mdays/02.png",
+      "alt": "MDays",
+      "detailMedia": [
+                {
+          "type": "image",
+          "src": "./assets/images/gallery/mdays/02.png",
+          "alt": "MDays 02"
+        },
+        {
+          "type": "image",
+          "src": "./assets/images/gallery/mdays/01.png",
+          "alt": "MDays 01"
+        },
+        {
+          "type": "image",
+          "src": "./assets/images/gallery/mdays/03.jpg",
+          "alt": "MDays 03"
+        }
+      ]
+    },
+    {
+      "title": "LAS LÍNEAS DEL DISEÑO - MNAD - 2026",
+      "image": "./assets/images/gallery/museo/01.jpg",
+      "alt": "Museo",
+      "detailMedia": [
+        {
+          "type": "image",
+          "src": "./assets/images/gallery/museo/01.jpg",
+          "alt": "Museo 01"
+        },
+        {
+          "type": "image",
+          "src": "./assets/images/gallery/museo/02.jpg",
+          "alt": "Museo 02"
+        },
+        {
+          "type": "image",
+          "src": "./assets/images/gallery/museo/03.jpg",
+          "alt": "Museo 03"
+        },
+        {
+          "type": "image",
+          "src": "./assets/images/gallery/museo/04.jpg",
+          "alt": "Museo 04"
+        },
+        {
+          "type": "image",
+          "src": "./assets/images/gallery/museo/05.jpeg",
+          "alt": "Museo 05"
+        }
+      ]
+    },
+    {
+      "title": "POSTER - ESD - 2025",
+      "image": "./assets/images/gallery/poster/01.png",
+      "alt": "Poster",
+      "detailMedia": [
+        {
+          "type": "image",
+          "src": "./assets/images/gallery/poster/01.png",
+          "alt": "Poster 01"
+        },
+        {
+          "type": "image",
+          "src": "./assets/images/gallery/poster/02.png",
+          "alt": "Poster 02"
+        },
+        {
+          "type": "image",
+          "src": "./assets/images/gallery/poster/03.png",
+          "alt": "Poster 03"
+        }
+      ]
+    },
+    {
+      "title": "ROTOSCOPIA - DUKI - 2025",
       "type": "video",
-      "video": "./assets/images/Motion01.mp4",
-      "alt": "Teatros del Canal imagen 02",
-      "layout": "large"
+      "video": "./assets/images/gallery/rotoscopia/01.mp4",
+      "alt": "Rotoscopia",
+      "detailMedia": [
+        {
+          "type": "video",
+          "src": "./assets/images/gallery/rotoscopia/01.mp4",
+          "poster": "./assets/images/Cartel_03.png",
+          "alt": "Rotoscopia 01"
+        }
+      ]
     },
     {
-      "title": "Gestalt poster",
-      "image": "./assets/images/Cartel_02.png",
-      "alt": "Teatros del Canal imagen 03",
-      "layout": "tall"
+      "title": "SERIGRAFÍA - BBYROMEO - 2025",
+      "image": "./assets/images/gallery/serigrafia/01.jpg",
+      "alt": "Serigrafía",
+      "detailMedia": [
+        {
+          "type": "image",
+          "src": "./assets/images/gallery/serigrafia/01.jpg",
+          "alt": "Serigrafía 01"
+        },
+        {
+          "type": "image",
+          "src": "./assets/images/gallery/serigrafia/02.HEIC",
+          "alt": "Serigrafía 02"
+        },
+        {
+          "type": "image",
+          "src": "./assets/images/gallery/serigrafia/03.HEIC",
+          "alt": "Serigrafía 03"
+        }
+      ]
     },
     {
-      "title": "video lyrics experimental Motion",
+      "title": "TOUCHDESIGNER - VISUALES MBFW26",
       "type": "video",
-      "video": "./assets/images/BBY ROMEO.mp4",
-      "alt": "Teatros del Canal imagen 02",
-      "layout": "medium"
+      "video": "./assets/images/gallery/touchdesign/01.mp4",
+      "alt": "Touchdesign",
+      "detailMedia": [
+        {
+          "type": "video",
+          "src": "./assets/images/gallery/touchdesign/01.mp4",
+          "poster": "./assets/images/Cartel_03.png",
+          "alt": "Touchdesign 01"
+        }
+      ]
     },
     {
-      "title": "El orden del tiempo - Carlo Rovelli",
-      "image": "./assets/images/Libro.png",
-      "alt": "Teatros del Canal imagen 05",
-      "layout": "medium"
+      "title": "FANZINE - ULM - 2023",
+      "image": "./assets/images/gallery/ulm/01.png",
+      "alt": "ULM",
+      "detailMedia": [
+        {
+          "type": "image",
+          "src": "./assets/images/gallery/ulm/01.png",
+          "alt": "ULM 01"
+        },
+        {
+          "type": "image",
+          "src": "./assets/images/gallery/ulm/02.png",
+          "alt": "ULM 02"
+        },
+        {
+          "type": "image",
+          "src": "./assets/images/gallery/ulm/03.png",
+          "alt": "ULM 03"
+        }
+      ]
     },
     {
-      "title": "Instante Fanzine Experimental",
-      "image": "./assets/images/Fanzine02.jpg",
-      "alt": "Teatros del Canal imagen 06",
-      "layout": "medium"
-    },
-    {
-      "title": "BBY ROMEO - Serigrafía",
-      "image": "./assets/images/Img_01.jpg",
-      "alt": "Teatros del Canal imagen 07",
-      "layout": "tall"
-    },
-    {
-      "title": "Rotoscopia- -Constelación, Duki",
+      "title": "VÍDEO LYRICS - BBYROMEO - 2024",
       "type": "video",
-      "video": "./assets/images/Motion02.mp4",
-      "alt": "Teatros del Canal imagen 02",
-      "layout": "medium"
+      "video": "./assets/images/gallery/video/01.mp4",
+      "alt": "Video",
+      "detailMedia": [
+        {
+          "type": "video",
+          "src": "./assets/images/gallery/video/01.mp4",
+          "poster": "./assets/images/Cartel_03.png",
+          "alt": "Video 01"
+        }
+      ]
     },
     {
-      "title": "Cartel para las jornadas de ilustracion 2025 ESDMadrid",
-      "image": "./assets/images/Cartel_01.jpg",
-      "alt": "Teatros del Canal imagen 09",
-      "layout": "tall" 
+      "title": "PUBLICACIÓN - WRAPPED24",
+      "image": "./assets/images/gallery/wrapped/02.png",
+      "alt": "Wrapped",
+      "detailMedia": [
+                {
+          "type": "image",
+          "src": "./assets/images/gallery/wrapped/02.png",
+          "alt": "Wrapped 02"
+        },
+                {
+          "type": "image",
+          "src": "./assets/images/gallery/wrapped/03.png",
+          "alt": "Wrapped 03"
+        },
+        {
+          "type": "image",
+          "src": "./assets/images/gallery/wrapped/01.png",
+          "alt": "Wrapped 01"
+        }
+      ]
     }
   ],
   "footer": {
-    "copyright": "© 2026 faceitout",
+    "copyright": "© 2026 FACEITOUT",
     "social": [
       {
-        "label": "Instagram",
+        "label": "EMAIL",
+        "href": "mailto:almudenaestevez23@gmail.com?subject=Start%20a%20project"
+      },
+      {
+        "label": "INSTAGRAM",
         "href": "https://www.instagram.com/face.itout?igsh=a2trcHo4Mjk2dmI%3D&utm_source=qr"
       },
       {
-        "label": "Tik Tok",
+        "label": "TIKTOK",
         "href": "https://www.tiktok.com/@face.itout?_r=1&_t=ZN-95yeSowWLUV"
       },
       {
-        "label": "Behance",
+        "label": "BEHANCE",
         "href": "#"
       }
     ],
-    "contact": {
-      "email": "almudenaestevez23@gmail.com",
-      "phoneLabel": "(+34) 638455663",
-      "phoneHref": "tel:+34638455663"
-    }
+    "credit": "DESIGNED BY ALMU ESTEVEZ :)"
   }
 }
