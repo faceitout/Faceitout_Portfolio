@@ -172,6 +172,7 @@ document.addEventListener("DOMContentLoaded", async () => {
             alt="${safeAlt}"
             loading="eager"
             decoding="async"
+            draggable="false"
           />
         </figure>
       `;
@@ -196,6 +197,7 @@ document.addEventListener("DOMContentLoaded", async () => {
             alt="${safeAlt}"
             loading="eager"
             decoding="async"
+            draggable="false"
           />
         </a>
       </figure>
@@ -421,17 +423,19 @@ document.addEventListener("DOMContentLoaded", async () => {
 
     let leftShift = 0;
     let rightShift = 0;
+    let resizeFrame = null;
 
     function getTrackShift(track) {
-      const items = Array.from(
-        track.querySelectorAll(".home-scroll-gallery__item")
-      );
+      const column = track.closest(".home-scroll-gallery__column");
 
-      if (!items.length) return 0;
+      const visibleHeight = column
+        ? column.clientHeight
+        : homeHeroStageElement.clientHeight || window.innerHeight;
 
-      const lastItem = items[items.length - 1];
+      const fullTrackHeight = track.scrollHeight;
+      const realShift = fullTrackHeight - visibleHeight;
 
-      return Math.max(0, Math.round(lastItem.offsetTop));
+      return Math.max(0, Math.round(realShift));
     }
 
     function snapPixel(value) {
@@ -501,23 +505,38 @@ document.addEventListener("DOMContentLoaded", async () => {
     );
 
     galleryImages.forEach((image) => {
-      if (image.complete) return;
+      const refreshAfterImage = () => {
+        refreshGalleryPosition();
+        ScrollTrigger.refresh();
+        setGalleryProgress(getCurrentProgress());
+      };
 
-      image.addEventListener(
-        "load",
-        () => {
-          calculateShifts();
-          ScrollTrigger.refresh();
-          setGalleryProgress(getCurrentProgress());
-        },
-        { once: true }
-      );
+      if (image.complete) {
+        return;
+      }
+
+      image.addEventListener("load", refreshAfterImage, { once: true });
+      image.addEventListener("error", refreshAfterImage, { once: true });
     });
 
+    if (document.fonts && typeof document.fonts.ready?.then === "function") {
+      document.fonts.ready.then(() => {
+        refreshGalleryPosition();
+        ScrollTrigger.refresh();
+      });
+    }
+
     window.addEventListener("resize", () => {
-      refreshGalleryPosition();
-      ScrollTrigger.refresh();
-      setGalleryProgress(getCurrentProgress());
+      if (resizeFrame) {
+        window.cancelAnimationFrame(resizeFrame);
+      }
+
+      resizeFrame = window.requestAnimationFrame(() => {
+        resizeFrame = null;
+        refreshGalleryPosition();
+        ScrollTrigger.refresh();
+        setGalleryProgress(getCurrentProgress());
+      });
     });
 
     window.addEventListener(
@@ -564,6 +583,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     homeMobileToggleElements.forEach((toggle) => {
       toggle.addEventListener("click", () => {
         const isOpen = document.body.classList.contains("is-home-mobile-menu-open");
+
         setHomeMobileMenuOpen(!isOpen);
       });
     });
@@ -598,7 +618,6 @@ document.addEventListener("DOMContentLoaded", async () => {
       ".home-brand",
       ".home-nav__item",
       ".home-start",
-      ".home-scroll-gallery__item",
       ".home-footer__copyright",
       ".home-footer__social",
       ".home-footer__credit"
@@ -616,7 +635,7 @@ document.addEventListener("DOMContentLoaded", async () => {
         duration: 0.75,
         stagger: 0.035,
         ease: "sine.out",
-        clearProps: "opacity,visibility"
+        clearProps: "opacity,visibility,transform"
       }
     );
   }
